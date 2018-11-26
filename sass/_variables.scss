@@ -10,26 +10,25 @@ $contentFullwidth: 1200px;
 $wideBlockFullwidth: 1440px;
 
 // Text Color
-$textColor: #282828;
+$textColor: #242424;
 
 // Theme Colors
 $themeColors: (
-	--primary-color           : #2255aa,
-	--secondary-color         : #ea8867,
-	--link-color              : #2255aa,
-	--link-hover-color        : #282828,
-	--button-color            : #2255aa,
+	--primary-color           : #4080ee,
+	--secondary-color         : #2040dd,
+	--link-color              : #4080ee,
+	--link-hover-color        : #242424,
+	--button-color            : #4080ee,
 	--button-text-color       : #fff,
-	--button-hover-color      : #282828,
+	--button-hover-color      : #242424,
 	--button-hover-text-color : #fff,
-	--header-background-color : #282828,
-	--header-text-color       : #fff,
-	--header-text-hover-color : rgba(255, 255, 255, 0.5),
-	--header-border-color     : rgba(255, 255, 255, 0.05),
-	--submenu-background-color: rgba(255, 255, 255, 0.05),
-	--title-color             : #282828,
-	--title-hover-color       : #2255aa,
-	--footer-background-color : #282828,
+	--header-background-color : #fff,
+	--header-text-color       : #242424,
+	--header-text-hover-color : #4080ee,
+	--header-border-color     : rgba(0, 0, 0, 0.1),
+	--title-color             : #242424,
+	--title-hover-color       : #4080ee,
+	--footer-background-color : #242424,
 	--footer-text-color       : #fff,
 	--footer-link-color       : rgba(255, 255, 255, 0.75),
 	--footer-link-hover-color : #fff,
@@ -59,6 +58,6 @@ $fontWeight: (
 
 // Text Transform.
 $textTransform: (
-	--title-text-transform : uppercase,
+	--title-text-transform : none,
 	--navi-text-transform  : uppercase,
 );

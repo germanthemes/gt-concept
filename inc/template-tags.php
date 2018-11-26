@@ -53,18 +53,8 @@ if ( ! function_exists( 'gt_concept_header_image' ) ) :
 	 */
 	function gt_concept_header_image() {
 
-		// Display featured image as header image on single posts.
-		if ( is_single() && has_post_thumbnail() ) :
-			?>
-
-			<div id="headimg" class="header-image featured-header-image">
-
-				<?php the_post_thumbnail( 'gt-concept-header-image' ); ?>
-
-			</div>
-
-			<?php
-		elseif ( is_page() && has_post_thumbnail() ) : // Display featured image as header image on static pages.
+		// Display featured image as header image on single posts and pages.
+		if ( is_singular() && has_post_thumbnail() ) :
 			?>
 
 			<div id="headimg" class="header-image featured-header-image">
@@ -127,24 +117,23 @@ if ( ! function_exists( 'gt_concept_search_header' ) ) :
 endif;
 
 
-if ( ! function_exists( 'gt_concept_post_image_archives' ) ) :
+if ( ! function_exists( 'gt_concept_post_thumbnail' ) ) :
 	/**
 	 * Displays the featured image on archive posts.
 	 */
-	function gt_concept_post_image_archives() {
+	function gt_concept_post_thumbnail() {
+		if ( ! has_post_thumbnail() ) {
+			return;
+		}
+		?>
 
-		// Display Post Thumbnail if activated.
-		if ( true === gt_concept_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
-			?>
+		<div class="post-thumbnail">
+			<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+				<?php the_post_thumbnail(); ?>
+			</a>
+		</div>
 
-			<div class="post-image post-image-archives">
-				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
-					<?php the_post_thumbnail(); ?>
-				</a>
-			</div>
-
-			<?php
-		endif;
+		<?php
 	}
 endif;
 

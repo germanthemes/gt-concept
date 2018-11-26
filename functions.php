@@ -27,10 +27,10 @@ function gt_concept_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 720, 360, true );
+	set_post_thumbnail_size( 720, 240, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'gt-concept-header-image', 2560, 640, true );
+	add_image_size( 'gt-concept-header-image', 1920, 640, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(

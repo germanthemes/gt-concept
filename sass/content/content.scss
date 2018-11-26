@@ -48,11 +48,12 @@
 
 /* Featured Images */
 .wp-post-image {
+	margin: 0;
 	vertical-align: top;
 }
 
-.post-image-archives .wp-post-image {
-	margin-bottom: 1rem;
+.post-thumbnail {
+	margin-bottom: 1.5rem;
 }
 
 /* Read More Button */

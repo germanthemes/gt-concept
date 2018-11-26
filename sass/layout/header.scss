@@ -1,5 +1,7 @@
 .site-header {
 	@include background(--header-background-color);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-main {
@@ -68,13 +70,14 @@
 
 /* Custom Header Image */
 .header-image {
-	margin: 0;
+	margin: -1px 0 0;
 }
 
 .header-image img,
 .header-image .wp-post-image {
 	margin: 0;
 	width: 100%;
+	max-width: 1920px;
 	height: auto;
 	vertical-align: top;
 }

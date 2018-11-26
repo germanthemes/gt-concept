@@ -8,22 +8,21 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #2255aa;
-	--secondary-color: #ea8867;
-	--link-color: #2255aa;
-	--link-hover-color: #282828;
-	--button-color: #2255aa;
+	--primary-color: #4080ee;
+	--secondary-color: #2040dd;
+	--link-color: #4080ee;
+	--link-hover-color: #242424;
+	--button-color: #4080ee;
 	--button-text-color: #fff;
-	--button-hover-color: #282828;
+	--button-hover-color: #242424;
 	--button-hover-text-color: #fff;
-	--header-background-color: #282828;
-	--header-text-color: #fff;
-	--header-text-hover-color: rgba(255, 255, 255, 0.5);
-	--header-border-color: rgba(255, 255, 255, 0.05);
-	--submenu-background-color: rgba(255, 255, 255, 0.05);
-	--title-color: #282828;
-	--title-hover-color: #2255aa;
-	--footer-background-color: #282828;
+	--header-background-color: #fff;
+	--header-text-color: #242424;
+	--header-text-hover-color: #4080ee;
+	--header-border-color: rgba(0, 0, 0, 0.1);
+	--title-color: #242424;
+	--title-hover-color: #4080ee;
+	--footer-background-color: #242424;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
 	--footer-link-hover-color: #fff;
@@ -31,7 +30,7 @@
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: bold;
-	--title-text-transform: uppercase;
+	--title-text-transform: none;
 	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--navi-font-weight: bold;
 	--navi-text-transform: uppercase;
@@ -73,7 +72,7 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
-	text-transform: uppercase;
+	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
 }
@@ -97,7 +96,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.75;
-	color: #282828;
+	color: #242424;
 }
 
 .editor-styles-wrapper p {
@@ -179,7 +178,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-top: 0;
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid #282828;
+	border-left: 4px solid #242424;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -191,7 +190,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper blockquote cite {
 	display: block;
-	color: #282828;
+	color: #242424;
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -333,7 +332,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .wp-block-pullquote blockquote cite {
-	color: #282828;
+	color: #242424;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
@@ -387,7 +386,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 /* Quote Block */
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.5em;
-	border-left: 4px solid #282828;
+	border-left: 4px solid #242424;
 }
 
 .wp-block-quote cite,
@@ -396,7 +395,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .wp-block-pullquote cite,
 .wp-block-pullquote footer,
 .wp-block-pullquote .wp-block-pullquote__citation {
-	color: #282828;
+	color: #242424;
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
@@ -425,12 +424,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #2255aa;
+	color: #4080ee;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #ea8867;
+	color: #2040dd;
 	color: var(--secondary-color);
 }
 
@@ -452,12 +451,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #2255aa;
+	background-color: #4080ee;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #ea8867;
+	background-color: #2040dd;
 	background-color: var(--secondary-color);
 }
 

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 400px) {
 	.menu-toggle .menu-toggle-text {
 		display: inline-block;
-		margin-left: 0.2em;
+		margin-left: 0.5rem;
 	}
 }
 
@@ -44,6 +44,11 @@
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
+		padding: 0.5rem;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border: 1px solid var(--header-border-color);
+		border-top: 4px solid #242424;
+		border-top: 4px solid var(--header-text-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -64,8 +69,14 @@
 
 	.main-navigation ul ul ul {
 		left: -999em;
-		margin-top: 0;
+		margin-top: -1px;
 		top: 0;
+	}
+
+	.main-navigation ul ul a,
+	.main-navigation ul ul ul a,
+	.main-navigation ul ul ul ul a {
+		padding: 1rem 1.25rem;
 	}
 
 	/* Dropdown Icons */

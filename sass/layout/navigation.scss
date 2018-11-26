@@ -40,7 +40,7 @@
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	border-top: 1px solid var(--header-border-color);
 	text-decoration: none;
 }
@@ -57,7 +57,7 @@
 }
 
 .main-navigation ul li.current-menu-item > a {
-	text-decoration: underline;
+	@include color(--header-text-hover-color);
 }
 
 /* Submenus */
@@ -71,8 +71,15 @@
 }
 
 .main-navigation ul ul a {
-	border: none;
-	@include background(--submenu-background-color);
+	padding-left: 2rem;
+}
+
+.main-navigation ul ul ul a {
+	padding-left: 4rem;
+}
+
+.main-navigation ul ul ul ul a {
+	padding-left: 6rem;
 }
 
 /* Main Navigation Toggle */
@@ -137,7 +144,7 @@
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1rem 1.5rem;
+	padding: 1.1rem 1.5rem;
 	background: none;
 }
 
@@ -172,7 +179,7 @@
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.8rem 1.2rem;
+	padding: 1rem 1.2rem;
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {
