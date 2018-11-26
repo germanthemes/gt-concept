@@ -11,12 +11,6 @@
 		@include font-size(32);
 	}
 
-	.entry-meta,
-	.more-link,
-	.pagination {
-		@include font-size(16);
-	}
-
 	.widget-title,
 	.archive-title,
 	.comments-title,
@@ -36,11 +30,5 @@
 
 	.entry-title {
 		@include font-size(36);
-	}
-
-	.entry-meta,
-	.more-link,
-	.pagination {
-		@include font-size(17);
 	}
 }

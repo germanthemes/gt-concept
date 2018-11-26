@@ -11,11 +11,15 @@
 if ( is_active_sidebar( 'footer-copyright' ) ) :
 	?>
 
-	<div id="footer-copyright" class="footer-copyright footer-main widget-area">
+	<div class="footer-copyright-background">
 
-		<?php dynamic_sidebar( 'footer-copyright' ); ?>
+		<div id="footer-copyright" class="footer-copyright footer-main widget-area">
 
-	</div><!-- .footer-copyright -->
+			<?php dynamic_sidebar( 'footer-copyright' ); ?>
+
+		</div><!-- .footer-copyright -->
+
+	</div>
 
 	<?php
 endif;

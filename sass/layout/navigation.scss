@@ -58,6 +58,7 @@
 
 .main-navigation ul li.current-menu-item > a {
 	@include color(--header-text-hover-color);
+	text-decoration: underline;
 }
 
 /* Submenus */

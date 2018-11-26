@@ -1,0 +1,30 @@
+.page-title-hidden .site-content {
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.page-title-hidden .header-image {
+	margin-bottom: 1.25rem;
+}
+
+.page-title-hidden .type-page .entry-header {
+	display: none;
+}
+
+@media only screen and (min-width: 480px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 2.5rem;
+	}
+}

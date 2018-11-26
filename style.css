@@ -44,20 +44,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #4080ee;
+	--primary-color: #ff7755;
 	--secondary-color: #2040dd;
-	--link-color: #4080ee;
+	--link-color: #ff7755;
 	--link-hover-color: #242424;
-	--button-color: #4080ee;
+	--button-color: #ff7755;
 	--button-text-color: #fff;
 	--button-hover-color: #242424;
 	--button-hover-text-color: #fff;
 	--header-background-color: #fff;
 	--header-text-color: #242424;
-	--header-text-hover-color: #4080ee;
+	--header-text-hover-color: #ff7755;
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #242424;
-	--title-hover-color: #4080ee;
+	--title-hover-color: #ff7755;
 	--footer-background-color: #242424;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
@@ -69,7 +69,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-text-transform: none;
 	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--navi-font-weight: bold;
-	--navi-text-transform: uppercase;
+	--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -504,7 +504,7 @@ td {
 }
 
 a {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--link-color);
 	text-decoration: underline;
 }
@@ -538,7 +538,7 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #4080ee;
+	background-color: #ff7755;
 	background-color: var(--button-color);
 	text-decoration: none;
 	font-weight: normal;
@@ -624,7 +624,7 @@ textarea {
 	bottom: 0;
 	padding: 0.6em 0.8em;
 	border: none;
-	background-color: #4080ee;
+	background-color: #ff7755;
 	background-color: var(--button-color);
 }
 
@@ -710,8 +710,9 @@ textarea {
 }
 
 .site-header,
-.site-footer,
-.site-content {
+.site-content,
+.footer-widgets-background,
+.footer-copyright-background {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
@@ -730,6 +731,10 @@ textarea {
 
 .site-main {
 	max-width: 720px;
+}
+
+.site-content {
+	padding-top: 1.25rem;
 }
 
 /*--------------------------------------------------------------
@@ -801,7 +806,7 @@ textarea {
 
 .site-title a:hover,
 .site-title a:active {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--header-text-hover-color);
 }
 
@@ -849,7 +854,7 @@ textarea {
 	font-family: var(--navi-font);
 	font-weight: bold;
 	font-weight: var(--navi-font-weight);
-	text-transform: uppercase;
+	text-transform: none;
 	text-transform: var(--navi-text-transform);
 }
 
@@ -893,13 +898,14 @@ textarea {
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--header-text-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--header-text-hover-color);
+	text-decoration: underline;
 }
 
 /* Submenus */
@@ -943,7 +949,7 @@ textarea {
 	font-family: var(--navi-font);
 	font-weight: bold;
 	font-weight: var(--navi-font-weight);
-	text-transform: uppercase;
+	text-transform: none;
 	text-transform: var(--navi-text-transform);
 	text-align: left;
 }
@@ -961,7 +967,7 @@ textarea {
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--header-text-hover-color);
 	background: none;
 	cursor: pointer;
@@ -978,7 +984,7 @@ textarea {
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
-	fill: #4080ee;
+	fill: #ff7755;
 	fill: var(--header-text-hover-color);
 }
 
@@ -1024,7 +1030,7 @@ textarea {
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon {
-	fill: #4080ee;
+	fill: #ff7755;
 	fill: var(--header-text-hover-color);
 }
 
@@ -1049,13 +1055,13 @@ textarea {
 .type-post,
 .type-page,
 .type-attachment {
-	margin: 0;
+	margin: 0 0 1.25rem;
 	padding: 0;
 }
 
 /* Entry Header */
 .entry-header {
-	margin: 1.5rem 0 1rem;
+	margin: 0 0 1rem;
 }
 
 .entry-title {
@@ -1085,7 +1091,7 @@ textarea {
 
 .entry-title a:hover,
 .entry-title a:active {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--title-hover-color);
 }
 
@@ -1114,36 +1120,18 @@ textarea {
 
 /* Read More Button */
 .more-link {
-	display: inline-block;
-	padding: 0.75rem 1rem;
-	color: #fff;
-	color: var(--button-text-color);
-	background-color: #4080ee;
-	background-color: var(--button-color);
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
-	text-transform: none;
-	text-transform: var(--title-text-transform);
 }
 
 .more-link:link,
-.more-link:visited {
-	color: #fff;
-	color: var(--button-text-color);
+.more-link:visited,
+.more-link:hover,
+.more-link:active {
 	text-decoration: none;
 }
 
-.more-link:hover,
-.more-link:active {
-	color: #fff;
-	color: var(--button-hover-text-color);
-	background-color: #242424;
-	background-color: var(--button-hover-color);
-	text-decoration: none;
+.more-link:after {
+	content: " \2192";
 }
 
 /* Search & Archive Header */
@@ -1154,18 +1142,19 @@ textarea {
 .entry-meta {
 	margin: 0.5rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.entry-meta a {
+	font-weight: bold;
 }
 
 .entry-meta a:link,
-.entry-meta a:visited {
-	text-decoration: none;
-}
-
+.entry-meta a:visited,
 .entry-meta a:hover,
 .entry-meta a:active {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .entry-meta .updated:not(.published) {
@@ -1174,7 +1163,7 @@ textarea {
 
 /* Theme Pagination */
 .pagination {
-	margin: 1.5rem 0;
+	margin: 0 0 1.5rem;
 	padding: 0;
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -1189,7 +1178,7 @@ textarea {
 	text-decoration: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #4080ee;
+	background-color: #ff7755;
 	background-color: var(--button-color);
 }
 
@@ -1235,8 +1224,10 @@ body.fullwidth-page-layout .site-content .site-main {
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
-.site-footer {
-	padding-top: 1.5rem;
+
+/* Footer Widgets */
+.footer-widgets-background {
+	padding-top: 2rem;
 	padding-bottom: 0.5rem;
 	color: #fff;
 	color: var(--footer-text-color);
@@ -1244,42 +1235,6 @@ body.fullwidth-page-layout .site-content .site-main {
 	background-color: var(--footer-background-color);
 }
 
-.site-footer a:link,
-.site-footer a:visited {
-	color: rgba(255, 255, 255, 0.75);
-	color: var(--footer-link-color);
-}
-
-.site-footer a:hover,
-.site-footer a:active {
-	color: #fff;
-	color: var(--footer-link-hover-color);
-}
-
-.site-footer input[type="text"],
-.site-footer input[type="email"],
-.site-footer input[type="url"],
-.site-footer input[type="password"],
-.site-footer input[type="search"],
-.site-footer input[type="submit"],
-.site-footer textarea {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border: 1px solid var(--footer-border-color);
-	color: #fff;
-	color: var(--footer-link-hover-color);
-}
-
-.site-footer input[type="text"]:focus,
-.site-footer input[type="email"]:focus,
-.site-footer input[type="url"]:focus,
-.site-footer input[type="password"]:focus,
-.site-footer input[type="search"]:focus,
-.site-footer textarea:focus {
-	color: #fff;
-	color: var(--footer-text-color);
-}
-
-/* Footer Widgets */
 .footer-widgets .widget {
 	margin-bottom: 1.5rem;
 }
@@ -1288,13 +1243,46 @@ body.fullwidth-page-layout .site-content .site-main {
 	margin-top: 0;
 }
 
+.footer-widgets a:link,
+.footer-widgets a:visited {
+	color: rgba(255, 255, 255, 0.75);
+	color: var(--footer-link-color);
+}
+
+.footer-widgets a:hover,
+.footer-widgets a:active {
+	color: #fff;
+	color: var(--footer-link-hover-color);
+}
+
+.footer-widgets input[type="text"],
+.footer-widgets input[type="email"],
+.footer-widgets input[type="url"],
+.footer-widgets input[type="password"],
+.footer-widgets input[type="search"],
+.footer-widgets input[type="submit"],
+.footer-widgets textarea {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid var(--footer-border-color);
+	color: #fff;
+	color: var(--footer-link-hover-color);
+}
+
+.footer-widgets input[type="text"]:focus,
+.footer-widgets input[type="email"]:focus,
+.footer-widgets input[type="url"]:focus,
+.footer-widgets input[type="password"]:focus,
+.footer-widgets input[type="search"]:focus,
+.footer-widgets textarea:focus {
+	color: #fff;
+	color: var(--footer-text-color);
+}
+
 /* Footer Copyright */
 .footer-copyright {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	padding-top: 1.5rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid var(--footer-border-color);
 }
 
 .footer-copyright .widget {
@@ -1554,7 +1542,7 @@ object {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #4080ee;
+	color: #ff7755;
 	color: var(--primary-color);
 }
 
@@ -1581,7 +1569,7 @@ object {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #4080ee;
+	background-color: #ff7755;
 	background-color: var(--primary-color);
 }
 
@@ -1646,13 +1634,6 @@ object {
 		font-size: 2rem;
 	}
 
-	.entry-meta,
-	.more-link,
-	.pagination {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
 	.widget-title,
 	.archive-title,
 	.comments-title,
@@ -1677,13 +1658,6 @@ object {
 		font-size: 36px;
 		font-size: 2.25rem;
 	}
-
-	.entry-meta,
-	.more-link,
-	.pagination {
-		font-size: 17px;
-		font-size: 1.0625rem;
-	}
 }
 
 /*--------------------------------------------------------------
@@ -1691,8 +1665,9 @@ object {
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
 	.site-header,
-	.site-footer,
-	.site-content {
+	.site-content,
+	.footer-widgets-background,
+	.footer-copyright-background {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -1700,6 +1675,16 @@ object {
 	.header-main {
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
+	}
+
+	.site-content {
+		padding-top: 1.5rem;
+	}
+
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 1.5rem;
 	}
 }
 
@@ -1712,16 +1697,8 @@ object {
 	}
 
 	.footer-widget-column {
-		display: flex;
-		flex-grow: 1;
-		box-sizing: border-box;
 		padding-right: 1.5rem;
 		width: 50%;
-		flex-direction: column;
-	}
-
-	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
 	}
 
 	/* Three Column Footer Widgets */
@@ -1733,12 +1710,24 @@ object {
 }
 
 @media only screen and (min-width: 800px) {
-	.entry-header {
-		margin: 2rem 0 1.5rem;
+	.site-content {
+		padding-top: 2rem;
 	}
 
+	.type-post,
+	.type-page,
+	.type-attachment,
 	.pagination {
-		margin: 2rem 0;
+		margin-bottom: 2rem;
+	}
+
+	.entry-header {
+		margin-bottom: 1.5rem;
+	}
+
+	.footer-widgets-background {
+		padding-top: 2.5rem;
+		padding-bottom: 1rem;
 	}
 
 	/* Three Column Footer Widgets */
@@ -1774,12 +1763,20 @@ object {
 }
 
 @media only screen and (min-width: 1120px) {
-	.entry-header {
-		margin: 2.5rem 0 2rem;
+	.site-content {
+		padding-top: 2.5rem;
 	}
 
+	.type-post,
+	.type-page,
+	.type-attachment,
 	.pagination {
-		margin: 2.5rem 0;
+		margin-bottom: 2.5rem;
+	}
+
+	.footer-widgets-background {
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
 	}
 }
 
@@ -1873,16 +1870,16 @@ object {
 		position: relative;
 		display: inline-block;
 		left: 0.5rem;
-		top: 0.15rem;
-		width: 15px;
-		height: 15px;
+		top: 0.1rem;
+		width: 14px;
+		height: 14px;
 		fill: #242424;
 		fill: var(--header-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: #4080ee;
+		fill: #ff7755;
 		fill: var(--header-text-hover-color);
 	}
 
@@ -1960,5 +1957,39 @@ object {
 
 	.gallery-columns-9 {
 		grid-template-columns: repeat(9, 1fr);
+	}
+}
+
+/*--------------------------------------------------------------
+# - Theme Options
+--------------------------------------------------------------*/
+.page-title-hidden .site-content {
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.page-title-hidden .header-image {
+	margin-bottom: 1.25rem;
+}
+
+.page-title-hidden .type-page .entry-header {
+	display: none;
+}
+
+@media only screen and (min-width: 480px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.page-title-hidden .header-image {
+		margin-bottom: 2.5rem;
 	}
 }

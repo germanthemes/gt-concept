@@ -7,8 +7,9 @@
 }
 
 .site-header,
-.site-footer,
-.site-content {
+.site-content,
+.footer-widgets-background,
+.footer-copyright-background {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
@@ -27,4 +28,8 @@
 
 .site-main {
 	max-width: $contentWidth;
+}
+
+.site-content {
+	padding-top: 1.25rem;
 }

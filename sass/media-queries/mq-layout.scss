@@ -1,7 +1,8 @@
 @media only screen and (min-width: 480px) {
-    .site-header,
-	.site-footer,
-	.site-content {
+	.site-header,
+	.site-content,
+	.footer-widgets-background,
+	.footer-copyright-background {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -9,7 +10,17 @@
     .header-main {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-    }
+	}
+
+	.site-content {
+		padding-top: 1.5rem;
+	}
+	
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 1.5rem;
+	}
 }
 
 @media only screen and (min-width: 560px) {
@@ -21,16 +32,8 @@
 	}
 
 	.footer-widget-column {
-		display: flex;
-		flex-grow: 1;
-		box-sizing: border-box;
 		padding-right: 1.5rem;
 		width: 50%;
-		flex-direction: column;
-	}
-
-	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
 	}
 
 	/* Three Column Footer Widgets */
@@ -42,13 +45,25 @@
 }
 
 @media only screen and (min-width: 800px) {
-    .entry-header {
-        margin: 2rem 0 1.5rem;
+	.site-content {
+		padding-top: 2rem;
+	}
+	
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.pagination {
+		margin-bottom: 2rem;
+	}
+	
+	.entry-header {
+        margin-bottom: 1.5rem;
     }
-
-    .pagination {
-    	margin: 2rem 0;
-    }
+	
+	.footer-widgets-background {
+		padding-top: 2.5rem;
+		padding-bottom: 1rem;
+	}
 	
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
@@ -84,11 +99,19 @@
 }
 
 @media only screen and (min-width: 1120px) {
-    .entry-header {
-        margin: 2.5rem 0 2rem;
-    }
-
-    .pagination {
-        margin: 2.5rem 0;
-    }
+	.site-content {
+		padding-top: 2.5rem;
+	}
+	
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.pagination {
+		margin-bottom: 2.5rem;
+	}
+	
+	.footer-widgets-background {
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
+	}
 }
