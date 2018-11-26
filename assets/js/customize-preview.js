@@ -73,50 +73,48 @@
 	/* Header Color Option */
 	wp.customize( 'gt_concept_theme_options[header_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color, border_color;
 
-			if( isColorLight( newval ) ) {
-				text_color = '#282828';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.075)';
-			} else {
+			if( isColorDark( newval ) ) {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.05)';
+				border_color = 'rgba(255, 255, 255, 0.1)';
+			} else {
+				text_color = '#242424';
+				border_color = 'rgba(0, 0, 0, 0.1)';
 			}
 
 			document.documentElement.style.setProperty( '--header-background-color', newval );
 			document.documentElement.style.setProperty( '--header-text-color', text_color );
-			document.documentElement.style.setProperty( '--header-text-hover-color', text_hover_color );
 			document.documentElement.style.setProperty( '--header-border-color', border_color );
 		} );
 	} );
 
-	/* Title Color Option */
-	wp.customize( 'gt_concept_theme_options[title_color]', function( value ) {
+	/* Navigation Color Option */
+	wp.customize( 'gt_concept_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-color', newval );
+			document.documentElement.style.setProperty( '--header-text-hover-color', newval );
 		} );
 	} );
 
 	/* Footer Color Option */
 	wp.customize( 'gt_concept_theme_options[footer_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color, link_color, border_color;
 
 			if( isColorLight( newval ) ) {
-				text_color = '#282828';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.05)';
+				text_color = '#242424';
+				link_color = 'rgba(0, 0, 0, 0.75)';
+				border_color = 'rgba(0, 0, 0, 0.35)';
 			} else {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
+				link_color = 'rgba(255, 255, 255, 0.75)';
 				border_color = 'rgba(255, 255, 255, 0.035)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-color', newval );
+			document.documentElement.style.setProperty( '--footer-background-color', newval );
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-hover-text-color', text_hover_color );
+			document.documentElement.style.setProperty( '--footer-link-color', link_color );
+			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
 			document.documentElement.style.setProperty( '--footer-border-color', border_color );
 		} );
 	} );

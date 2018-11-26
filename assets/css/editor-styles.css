@@ -9,7 +9,7 @@
 --------------------------------------------------------------*/
 :root {
 	--primary-color: #ff7755;
-	--secondary-color: #2040dd;
+	--secondary-color: #d9512f;
 	--link-color: #ff7755;
 	--link-hover-color: #242424;
 	--button-color: #ff7755;
@@ -22,7 +22,7 @@
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #242424;
 	--title-hover-color: #ff7755;
-	--footer-background-color: #242424;
+	--footer-background-color: #d9512f;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
 	--footer-link-hover-color: #fff;
@@ -429,7 +429,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-secondary-color {
-	color: #2040dd;
+	color: #d9512f;
 	color: var(--secondary-color);
 }
 
@@ -456,7 +456,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-secondary-background-color {
-	background-color: #2040dd;
+	background-color: #d9512f;
 	background-color: var(--secondary-color);
 }
 

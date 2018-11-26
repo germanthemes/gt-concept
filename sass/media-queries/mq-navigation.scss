@@ -47,8 +47,8 @@
 		padding: 0.5rem;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		border: 1px solid var(--header-border-color);
-		border-top: 4px solid #242424;
-		border-top: 4px solid var(--header-text-color);
+		border-top: 4px solid #ff7755;
+		border-top: 4px solid var(--header-text-hover-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -106,10 +106,5 @@
 		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
 		-ms-transform: rotate(-90deg); /* IE 9 */
 		transform: rotate(-90deg);
-	}
-
-	/* Extra Styling for top menu items with dropdowns */
-	.main-navigation ul li.menu-item-has-children:hover a {
-		@include background(--submenu-background-color);
 	}
 }

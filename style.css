@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 :root {
 	--primary-color: #ff7755;
-	--secondary-color: #2040dd;
+	--secondary-color: #d9512f;
 	--link-color: #ff7755;
 	--link-hover-color: #242424;
 	--button-color: #ff7755;
@@ -58,7 +58,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #242424;
 	--title-hover-color: #ff7755;
-	--footer-background-color: #242424;
+	--footer-background-color: #d9512f;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
 	--footer-link-hover-color: #fff;
@@ -1103,8 +1103,8 @@ textarea {
 
 .entry-content > .alignwide,
 .entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2 + 8px);
-	margin-right: calc( -100vw / 2 + 100% / 2 + 8px);
+	margin-left: calc( -100vw / 2 + 100% / 2);
+	margin-right: calc( -100vw / 2 + 100% / 2);
 	max-width: 100vw;
 }
 
@@ -1207,8 +1207,8 @@ body.fullwidth-page-layout .site-content .site-main {
 /* Adjust Wide Blocks */
 @media only screen and (min-width: 960px) {
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 + 8px);
-		margin-right: calc( -100vw / 2 + 100% / 2 + 8px);
+		margin-left: calc( -100vw / 2 + 100% / 2);
+		margin-right: calc( -100vw / 2 + 100% / 2);
 		max-width: 100vw;
 	}
 }
@@ -1231,7 +1231,7 @@ body.fullwidth-page-layout .site-content .site-main {
 	padding-bottom: 0.5rem;
 	color: #fff;
 	color: var(--footer-text-color);
-	background-color: #242424;
+	background-color: #d9512f;
 	background-color: var(--footer-background-color);
 }
 
@@ -1547,7 +1547,7 @@ object {
 }
 
 .has-secondary-color {
-	color: #2040dd;
+	color: #d9512f;
 	color: var(--secondary-color);
 }
 
@@ -1574,7 +1574,7 @@ object {
 }
 
 .has-secondary-background-color {
-	background-color: #2040dd;
+	background-color: #d9512f;
 	background-color: var(--secondary-color);
 }
 
@@ -1832,8 +1832,8 @@ object {
 		padding: 0.5rem;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		border: 1px solid var(--header-border-color);
-		border-top: 4px solid #242424;
-		border-top: 4px solid var(--header-text-color);
+		border-top: 4px solid #ff7755;
+		border-top: 4px solid var(--header-text-hover-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -1895,11 +1895,6 @@ object {
 		-ms-transform: rotate(-90deg);
 		/* IE 9 */
 		transform: rotate(-90deg);
-	}
-
-	/* Extra Styling for top menu items with dropdowns */
-	.main-navigation ul li.menu-item-has-children:hover a {
-		background-color: var(--submenu-background-color);
 	}
 }
 
