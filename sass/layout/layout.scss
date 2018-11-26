@@ -1,0 +1,30 @@
+.site {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.site-header,
+.site-footer,
+.site-content {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.header-main,
+.footer-main,
+.site-main {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-main,
+.footer-main {
+	max-width: $themeWidth;
+}
+
+.site-main {
+	max-width: $contentWidth;
+}

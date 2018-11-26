@@ -1,0 +1,49 @@
+/* Block Text Colors */
+.has-primary-color {
+	@include color(--primary-color);
+}
+
+.has-secondary-color {
+	@include color(--secondary-color);
+}
+
+.has-white-color {
+	color: $whiteColor;
+}
+
+.has-light-gray-color {
+	color: $lightGrayColor;
+}
+
+.has-dark-gray-color {
+	color: $darkGrayColor;
+}
+
+.has-black-color {
+	color: $blackColor;
+}
+
+/* Block Background Colors */
+.has-primary-background-color {
+	@include background(--primary-color);
+}
+
+.has-secondary-background-color {
+	@include background(--secondary-color);
+}
+
+.has-white-background-color {
+	background-color: $whiteColor;
+}
+
+.has-light-gray-background-color {
+	background-color: $lightGrayColor;
+}
+
+.has-dark-gray-background-color {
+	background-color: $darkGrayColor;
+}
+
+.has-black-background-color {
+	background-color: $blackColor;
+}
