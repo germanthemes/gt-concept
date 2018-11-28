@@ -1,7 +1,7 @@
 /* Footer Widgets */
 .footer-widgets-background {
-	padding-top: 2rem;
-	padding-bottom: 0.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1px;
 	@include color(--footer-text-color);
 	@include background(--footer-background-color);
 }

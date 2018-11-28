@@ -21,6 +21,15 @@
 	.type-attachment {
 		margin-bottom: 1.5rem;
 	}
+
+	/* Footer Widgets */
+	.footer-widgets-background {
+		padding-top: 2rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2rem;
+	}
 }
 
 @media only screen and (min-width: 560px) {
@@ -58,11 +67,23 @@
 	
 	.entry-header {
         margin-bottom: 1.5rem;
-    }
+	}
 	
+	/* Footer Widgets */
 	.footer-widgets-background {
 		padding-top: 2.5rem;
-		padding-bottom: 1rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2.5rem;
+	}
+	
+	.footer-widgets-columns {
+		margin-right: -2.5rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 2.5rem;
 	}
 	
 	/* Three Column Footer Widgets */
@@ -70,12 +91,6 @@
 	.footer-widget-column:nth-child(2):nth-last-child(2),
 	.footer-widget-column:nth-child(3):nth-last-child(1) {
 		width: 33.3333333333333%;
-	}
-}
-
-@media only screen and (min-width: 880px) {
-    .site-footer .footer-main {
-		text-align: left;
 	}
 }
 
@@ -88,7 +103,6 @@
 }
 
 @media only screen and (min-width: 1040px) {
-
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
 	.footer-widget-column:nth-child(2):nth-last-child(3),
@@ -109,9 +123,21 @@
 	.pagination {
 		margin-bottom: 2.5rem;
 	}
-	
+
+	/* Footer Widgets */
 	.footer-widgets-background {
 		padding-top: 3rem;
-		padding-bottom: 1.5rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 3rem;
+	}
+	
+	.footer-widgets-columns {
+		margin-right: -3rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 3rem;
 	}
 }

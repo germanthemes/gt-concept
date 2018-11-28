@@ -66,8 +66,8 @@
 
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
-	font-size: 36px;
-	font-size: 2.25rem;
+	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
@@ -75,6 +75,20 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+}
+
+@media only screen and (min-width: 640px) {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
 }
 
 /* Hidden Page Title */
@@ -107,6 +121,11 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper .mce-content-body {
 	line-height: 1.75;
+}
+
+.editor-styles-wrapper a {
+	color: #ff7755;
+	color: var(--link-color);
 }
 
 .editor-styles-wrapper hr {

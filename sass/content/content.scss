@@ -55,24 +55,3 @@
 .post-thumbnail {
 	margin-bottom: 1.5rem;
 }
-
-/* Read More Button */
-.more-link {
-	font-weight: bold;
-}
-
-.more-link:link,
-.more-link:visited,
-.more-link:hover,
-.more-link:active {
-	text-decoration: none;
-}
-
-.more-link:after {
-    content: " \2192";
-}
-
-/* Search & Archive Header */
-.search-header .search-form {
-	margin-top: 1rem;
-}
