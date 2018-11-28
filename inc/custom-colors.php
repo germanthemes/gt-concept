@@ -97,9 +97,8 @@ class GT_Concept_Custom_Colors {
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
 				$color_variables .= '--footer-text-color: #242424;';
-				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.75);';
+				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.6);';
 				$color_variables .= '--footer-link-hover-color: #242424;';
-				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.35);';
 			}
 		}
 

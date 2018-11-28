@@ -60,9 +60,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-hover-color: #ff7755;
 	--footer-background-color: #d9512f;
 	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.75);
+	--footer-link-color: rgba(255, 255, 255, 0.6);
 	--footer-link-hover-color: #fff;
-	--footer-border-color: rgba(255, 255, 255, 0.035);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: bold;
@@ -572,8 +571,8 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.075);
-	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background: #fff;
 	color: #666;
 }
 
@@ -585,6 +584,7 @@ input[type="search"]:focus,
 textarea:focus {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	color: #242424;
+	outline: none;
 }
 
 textarea {
@@ -635,7 +635,7 @@ textarea {
 }
 
 .search-form .search-submit .icon-search {
-	margin: 5px 0 0;
+	margin: 4px 0 0;
 	width: 22px;
 	height: 22px;
 	fill: #fff;
@@ -1241,11 +1241,13 @@ body.fullwidth-page-layout .site-content .site-main {
 
 .footer-widgets .widget-title {
 	margin-top: 0;
+	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .footer-widgets a:link,
 .footer-widgets a:visited {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-link-color);
 }
 
@@ -1255,6 +1257,10 @@ body.fullwidth-page-layout .site-content .site-main {
 	color: var(--footer-link-hover-color);
 }
 
+.footer-widgets .widget ul li a {
+	text-decoration: none;
+}
+
 .footer-widgets input[type="text"],
 .footer-widgets input[type="email"],
 .footer-widgets input[type="url"],
@@ -1262,20 +1268,7 @@ body.fullwidth-page-layout .site-content .site-main {
 .footer-widgets input[type="search"],
 .footer-widgets input[type="submit"],
 .footer-widgets textarea {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border: 1px solid var(--footer-border-color);
-	color: #fff;
-	color: var(--footer-link-hover-color);
-}
-
-.footer-widgets input[type="text"]:focus,
-.footer-widgets input[type="email"]:focus,
-.footer-widgets input[type="url"]:focus,
-.footer-widgets input[type="password"]:focus,
-.footer-widgets input[type="search"]:focus,
-.footer-widgets textarea:focus {
-	color: #fff;
-	color: var(--footer-text-color);
+	border: none;
 }
 
 /* Footer Copyright */

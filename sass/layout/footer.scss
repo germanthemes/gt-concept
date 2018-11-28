@@ -12,6 +12,7 @@
 
 .footer-widgets .widget-title {
 	margin-top: 0;
+	@include font-size(20);
 }
 
 .footer-widgets a:link,
@@ -24,6 +25,10 @@
 	@include color(--footer-link-hover-color);
 }
 
+.footer-widgets .widget ul li a {
+	text-decoration: none;
+}
+
 .footer-widgets input[type="text"],
 .footer-widgets input[type="email"],
 .footer-widgets input[type="url"],
@@ -31,18 +36,7 @@
 .footer-widgets input[type="search"],
 .footer-widgets input[type="submit"],
 .footer-widgets textarea {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border: 1px solid var(--footer-border-color);
-	@include color(--footer-link-hover-color);
-}
-
-.footer-widgets input[type="text"]:focus,
-.footer-widgets input[type="email"]:focus,
-.footer-widgets input[type="url"]:focus,
-.footer-widgets input[type="password"]:focus,
-.footer-widgets input[type="search"]:focus,
-.footer-widgets textarea:focus {
-	@include color(--footer-text-color);
+	border: none;
 }
 
 /* Footer Copyright */

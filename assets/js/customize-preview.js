@@ -103,19 +103,16 @@
 
 			if( isColorLight( newval ) ) {
 				text_color = '#242424';
-				link_color = 'rgba(0, 0, 0, 0.75)';
-				border_color = 'rgba(0, 0, 0, 0.35)';
+				link_color = 'rgba(0, 0, 0, 0.6)';
 			} else {
 				text_color = '#ffffff';
-				link_color = 'rgba(255, 255, 255, 0.75)';
-				border_color = 'rgba(255, 255, 255, 0.035)';
+				link_color = 'rgba(255, 255, 255, 0.6)';
 			}
 
 			document.documentElement.style.setProperty( '--footer-background-color', newval );
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
 			document.documentElement.style.setProperty( '--footer-link-color', link_color );
 			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
-			document.documentElement.style.setProperty( '--footer-border-color', border_color );
 		} );
 	} );
 

@@ -36,8 +36,8 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 1px solid rgba(0,0,0,0.075);
-	background: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
 	color: #666;
 }
 
@@ -49,6 +49,7 @@ input[type="search"]:focus,
 textarea:focus {
 	border: 1px solid rgba(0,0,0,0.2);
 	color: $textColor;
+	outline: none;
 }
 
 textarea {
@@ -96,7 +97,7 @@ textarea {
 }
 
 .search-form .search-submit .icon-search {
-	margin: 5px 0 0;
+	margin: 4px 0 0;
 	width: 22px;
 	height: 22px;
 	@include fill(--button-text-color);
