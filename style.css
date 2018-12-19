@@ -1533,6 +1533,19 @@ object {
 	color: inherit;
 }
 
+/* GT Section Block */
+.gt-background-section .gt-section-content.gt-default-width {
+	max-width: 720px;
+}
+
+.gt-background-section .gt-section-content.gt-wide-width {
+	max-width: 960px;
+}
+
+.gt-background-section .gt-section-content.gt-full-width {
+	max-width: 1200px;
+}
+
 /* Block Text Colors */
 .has-primary-color {
 	color: #ff7755;

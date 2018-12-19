@@ -99,7 +99,7 @@
 	/* Footer Color Option */
 	wp.customize( 'gt_concept_theme_options[footer_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, link_color, border_color;
+			var text_color, link_color;
 
 			if( isColorLight( newval ) ) {
 				text_color = '#242424';
