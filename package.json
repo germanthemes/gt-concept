@@ -4,15 +4,16 @@
   "description": "GT Concept WordPress Theme",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"export": "git archive HEAD -9 --format=zip > ../gt-concept.zip"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ThemeZee@bitbucket.org/ThemeZee/gt-concept.git"
+    "url": "git+https://github.com/Netzberufler/gt-concept.git"
   },
   "author": "ThemeZee",
   "license": "GPL-3.0",
-  "homepage": "https://bitbucket.org/ThemeZee/gt-concept#readme",
+  "homepage": "https://github.com/Netzberufler/gt-concept",
   "devDependencies": {
     "autoprefixer": "^7.2.2",
     "gulp": "^3.9.1",
