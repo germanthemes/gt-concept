@@ -54,6 +54,22 @@ function gt_concept_customize_register_theme_color_settings( $wp_customize ) {
 		)
 	) );
 
+	// Add Accent Color setting.
+	$wp_customize->add_setting( 'gt_concept_theme_options[accent_color]', array(
+		'default'           => $default['accent_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_concept_theme_options[accent_color]', array(
+			'label'    => esc_html_x( 'Accent', 'block color', 'gt-concept' ),
+			'section'  => 'gt_concept_section_colors',
+			'settings' => 'gt_concept_theme_options[accent_color]',
+			'priority' => 30,
+		)
+	) );
+
 	// Add Header Color setting.
 	$wp_customize->add_setting( 'gt_concept_theme_options[header_color]', array(
 		'default'           => $default['header_color'],
@@ -66,7 +82,7 @@ function gt_concept_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Header', 'theme colors', 'gt-concept' ),
 			'section'  => 'gt_concept_section_colors',
 			'settings' => 'gt_concept_theme_options[header_color]',
-			'priority' => 30,
+			'priority' => 40,
 		)
 	) );
 
@@ -82,7 +98,7 @@ function gt_concept_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Navigation', 'theme colors', 'gt-concept' ),
 			'section'  => 'gt_concept_section_colors',
 			'settings' => 'gt_concept_theme_options[navi_color]',
-			'priority' => 40,
+			'priority' => 50,
 		)
 	) );
 
@@ -98,7 +114,7 @@ function gt_concept_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Footer Widgets', 'theme colors', 'gt-concept' ),
 			'section'  => 'gt_concept_section_colors',
 			'settings' => 'gt_concept_theme_options[footer_color]',
-			'priority' => 50,
+			'priority' => 60,
 		)
 	) );
 }
