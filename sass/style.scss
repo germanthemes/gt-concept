@@ -102,11 +102,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'content/archives';
 
 /*--------------------------------------------------------------
-# - Page Layouts
---------------------------------------------------------------*/
-@import 'content/templates';
-
-/*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
 @import 'layout/footer';
@@ -151,4 +146,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Theme Options
 --------------------------------------------------------------*/
-@import 'layout/theme-options';
+@import 'content/theme-options';
