@@ -193,12 +193,21 @@ function gt_concept_theme_updater() {
 	if ( '' !== gt_concept_get_option( 'license_key' ) ) :
 
 		// Setup the updater.
-		$theme_updater = new GT_Concept_Plugin_Updater( GT_CONCEPT_STORE_API_URL, __FILE__, array(
-			'version' => '1.0',
-			'license' => trim( gt_concept_get_option( 'license_key' ) ),
-			'item_id' => GT_CONCEPT_PRODUCT_ID,
-			'author'  => 'GermanThemes',
-		) );
+		$theme_updater = new GT_Concept_Theme_Updater(
+			array(
+				'remote_api_url' => GT_CONCEPT_STORE_API_URL,
+				'version'        => '1.0',
+				'license'        => trim( gt_concept_get_option( 'license_key' ) ),
+				'item_id'        => GT_CONCEPT_PRODUCT_ID,
+				'item_name'      => 'GT Concept',
+				'theme_slug'     => 'gt-concept',
+				'author'         => 'GermanThemes',
+			),
+			array(
+				'update-notice'    => __( "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update.", 'gt-concept' ),
+				'update-available' => __( '<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4$s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'gt-concept' ),
+			)
+		);
 
 	endif;
 }
