@@ -16,6 +16,7 @@ require( get_template_directory() . '/inc/customizer/controls/plugin-control.php
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/license-settings.php' );
