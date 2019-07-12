@@ -17,6 +17,10 @@ $themeColors: (
 	--primary-color           : #ff7755,
 	--secondary-color         : #d9512f,
 	--accent-color            : #55aaff,
+	--highlight-color         : #00bb88,
+	--light-gray-color        : #e4e4e4,
+	--gray-color              : #848484,
+	--dark-gray-color         : #242424,
 	--link-color              : #ff7755,
 	--link-hover-color        : #242424,
 	--button-color            : #ff7755,
@@ -34,12 +38,6 @@ $themeColors: (
 	--footer-link-color       : rgba(255, 255, 255, 0.6),
 	--footer-link-hover-color : #fff,
 );
-
-// Basic Block Colors.
-$whiteColor: #ffffff;
-$lightGrayColor: #e5e5e5;
-$darkGrayColor: #555555;
-$blackColor: #242424;
 
 // Theme Fonts
 $baseFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
