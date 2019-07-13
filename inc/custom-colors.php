@@ -59,14 +59,6 @@ class GT_Concept_Custom_Colors {
 		// Set Primary Color.
 		if ( $theme_options['primary_color'] !== $default['primary_color'] ) {
 			$color_variables .= '--primary-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--link-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--button-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--title-hover-color: ' . $theme_options['primary_color'] . ';';
-
-			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['primary_color'] ) ) {
-				$color_variables .= '--button-text-color: #242424;';
-			}
 		}
 
 		// Set Secondary Color.
@@ -99,6 +91,17 @@ class GT_Concept_Custom_Colors {
 			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
+		// Set Link Color.
+		if ( $theme_options['link_color'] !== $default['link_color'] ) {
+			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
+			$color_variables .= '--button-color: ' . $theme_options['link_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['link_color'] ) ) {
+				$color_variables .= '--button-text-color: #242424;';
+			}
+		}
+
 		// Set Header Color.
 		if ( $theme_options['header_color'] !== $default['header_color'] ) {
 			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
@@ -113,6 +116,16 @@ class GT_Concept_Custom_Colors {
 		// Set Navigation Color.
 		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
 			$color_variables .= '--header-text-hover-color: ' . $theme_options['navi_color'] . ';';
+		}
+
+		// Set Title Color.
+		if ( $theme_options['title_color'] !== $default['title_color'] ) {
+			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
+		}
+
+		// Set Title Hover Color.
+		if ( $theme_options['title_hover_color'] !== $default['title_hover_color'] ) {
+			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
 		}
 
 		// Set Footer Color.
