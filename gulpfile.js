@@ -60,5 +60,5 @@ gulp.task( 'sass', function() {
 
 // Sass Watch
 gulp.task('sass:watch', function () {
-	gulp.watch( 'sass/**/*.scss', gulp.parallel('sass', 'editor') );
+	gulp.watch( 'sass/**/*.scss', gulp.series('sass', 'editor'));
 });

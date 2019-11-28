@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/themes/gt-concept/
 Author: germanthemes
 Author URI: https://germanthemes.de
 Description: GT Concept is a modern Business WordPress Theme.
-Version: 1.1
+Version: 1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gt-concept
@@ -1203,6 +1203,37 @@ textarea {
 /* Search & Archive Header */
 .search-header .search-form {
 	margin-top: 1rem;
+}
+
+/* Comments */
+.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment-list .comment {
+	margin-bottom: 1.5rem;
+}
+
+.comment-list .comment .comment-author {
+	font-size: 120%;
+}
+
+.comment-list .comment .comment-meta {
+	font-size: 80%;
+	margin-bottom: 0.5rem;
+}
+
+.comment-list .bypostauthor .comment-author .fn {
+	font-weight: bold;
+}
+
+.comment-list .children {
+	list-style: none;
+}
+
+.comment-form label {
+	display: block;
 }
 
 /*--------------------------------------------------------------
