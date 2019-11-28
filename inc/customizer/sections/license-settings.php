@@ -22,6 +22,15 @@ function gt_concept_customize_register_license_settings( $wp_customize ) {
 		'panel'       => 'gt_concept_options_panel',
 	) );
 
+	// Add Theme Links control.
+	$wp_customize->add_control( new GT_Concept_Customize_Links_Control(
+		$wp_customize, 'gt_concept_theme_links', array(
+			'section'  => 'gt_concept_section_license',
+			'settings' => array(),
+			'priority' => 10,
+		)
+	) );
+
 	// Add License Key setting.
 	$wp_customize->add_setting( 'gt_concept_theme_options[license_key]', array(
 		'default'           => '',
@@ -35,7 +44,7 @@ function gt_concept_customize_register_license_settings( $wp_customize ) {
 			'label'    => esc_html__( 'License Key', 'gt-concept' ),
 			'section'  => 'gt_concept_section_license',
 			'settings' => 'gt_concept_theme_options[license_key]',
-			'priority' => 10,
+			'priority' => 20,
 		)
 	) );
 }
