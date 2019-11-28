@@ -39,3 +39,8 @@
 	fill: map-get($themeColors, $colorVar);
 	fill: var($colorVar);
 }
+
+// CSS Variable
+@mixin variable($variable, $map) {
+	#{$variable}: map-get($map, $variable);
+}
