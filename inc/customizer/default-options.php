@@ -51,6 +51,10 @@ function gt_concept_default_options() {
 	$default_options = array(
 		'site_title'         => true,
 		'site_description'   => true,
+		'meta_date'          => true,
+		'meta_author'        => true,
+		'meta_categories'    => true,
+		'meta_tags'          => false,
 		'primary_color'      => '#ff7755',
 		'secondary_color'    => '#d9512f',
 		'accent_color'       => '#55aaff',
