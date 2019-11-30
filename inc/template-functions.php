@@ -13,6 +13,9 @@
  */
 function gt_concept_body_classes( $classes ) {
 
+	// Get theme options from database.
+	$theme_options = gt_concept_theme_options();
+
 	// Fullwidth Page Layout?
 	if ( is_page() && 'fullwidth' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
 		$classes[] = 'fullwidth-page-layout';
@@ -26,6 +29,26 @@ function gt_concept_body_classes( $classes ) {
 	// Remove bottom margin of page?
 	if ( is_page() && get_post_meta( get_the_ID(), 'gt_remove_bottom_margin', true ) ) {
 		$classes[] = 'page-bottom-margin-removed';
+	}
+
+	// Hide Date?
+	if ( false === $theme_options['meta_date'] ) {
+		$classes[] = 'date-hidden';
+	}
+
+	// Hide Author?
+	if ( false === $theme_options['meta_author'] ) {
+		$classes[] = 'author-hidden';
+	}
+
+	// Hide Categories?
+	if ( false === $theme_options['meta_categories'] ) {
+		$classes[] = 'categories-hidden';
+	}
+
+	// Hide Tags?
+	if ( false === $theme_options['meta_tags'] ) {
+		$classes[] = 'tags-hidden';
 	}
 
 	// Adds a class of hfeed to non-singular pages.
