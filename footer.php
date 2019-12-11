@@ -13,6 +13,9 @@
 ?>
 
 		</main><!-- #main -->
+
+		<?php get_sidebar(); ?>
+
 	</div><!-- #content -->
 
 	<?php do_action( 'gt_concept_before_footer' ); ?>

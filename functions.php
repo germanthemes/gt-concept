@@ -131,6 +131,17 @@ add_action( 'wp_enqueue_scripts', 'gt_concept_scripts' );
  */
 function gt_concept_widgets_init() {
 
+	// Register Blog Sidebar widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blog Sidebar', 'gt-concept' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'gt-concept' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class = "widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
 	// Register Footer Column 1 widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Column 1', 'gt-concept' ),

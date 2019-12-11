@@ -51,6 +51,11 @@ function gt_concept_body_classes( $classes ) {
 		$classes[] = 'tags-hidden';
 	}
 
+	// Add Blog Sidebar class.
+	if ( is_active_sidebar( 'sidebar-1' ) && gt_concept_is_blog_page() ) {
+		$classes[] = 'has-blog-sidebar';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -60,6 +65,14 @@ function gt_concept_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'gt_concept_body_classes' );
 
+/**
+ * Check if we are on a blog page or single post.
+ *
+ * @return bool
+ */
+function gt_concept_is_blog_page() {
+	return ( 'post' === get_post_type() ) && ( is_home() || is_archive() || is_single() );
+}
 
 /**
  * Hide Elements with CSS.
