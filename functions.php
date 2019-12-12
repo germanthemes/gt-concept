@@ -212,7 +212,7 @@ function gt_concept_theme_updater() {
 		$theme_updater = new GT_Concept_Theme_Updater(
 			array(
 				'remote_api_url' => GT_CONCEPT_STORE_API_URL,
-				'version'        => '1.1',
+				'version'        => '1.2',
 				'license'        => trim( gt_concept_get_option( 'license_key' ) ),
 				'item_id'        => GT_CONCEPT_PRODUCT_ID,
 				'item_name'      => 'GT Concept',
