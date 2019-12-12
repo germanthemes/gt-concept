@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GT Concept\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-07-15 15:42+0200\n"
+"POT-Creation-Date: 2019-12-12 10:56+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: GermanThemes <support@germanthemes.de>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -31,6 +31,19 @@ msgid ""
 "of the links below?"
 msgstr ""
 
+#: comments.php:33
+msgid "One comment"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgid "%s comments"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
 #: functions.php:37
 msgid "Main Navigation"
 msgstr ""
@@ -43,58 +56,67 @@ msgstr ""
 msgid "Collapse child menu"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:136
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:138
+msgctxt "widget area description"
+msgid "Appears on blog pages and single posts."
+msgstr ""
+
+#: functions.php:147
 msgid "Footer Column 1"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:149
 msgctxt "widget area description"
 msgid "Appears in the first column in footer."
 msgstr ""
 
-#: functions.php:142
+#: functions.php:158
 msgid "Footer Column 2"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:160
 msgctxt "widget area description"
 msgid "Appears in the second column in footer."
 msgstr ""
 
-#: functions.php:153
+#: functions.php:169
 msgid "Footer Column 3"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:171
 msgctxt "widget area description"
 msgid "Appears in the third column in footer."
 msgstr ""
 
-#: functions.php:164
+#: functions.php:180
 msgid "Footer Column 4"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:182
 msgctxt "widget area description"
 msgid "Appears in the fourth column in footer."
 msgstr ""
 
-#: functions.php:175
+#: functions.php:191
 msgid "Footer Copyright"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:193
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
-#: functions.php:207
+#: functions.php:223
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
 
-#: functions.php:208
+#: functions.php:224
 #, php-format
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
@@ -102,7 +124,7 @@ msgid ""
 "a>."
 msgstr ""
 
-#: header.php:25
+#: header.php:26
 msgid "Skip to content"
 msgstr ""
 
@@ -174,15 +196,39 @@ msgstr ""
 msgid "License Status"
 msgstr ""
 
+#: inc/customizer/controls/links-control.php:25
+msgid "Theme Links"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:28
+msgid "https://germanthemes.de/en/themes/gt-concept/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:29
+msgid "Theme Page"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:35
+msgid "Theme Demo"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:40
+msgid "https://germanthemes.de/en/docs/gt-concept-documentation/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:41
+msgid "Theme Documentation"
+msgstr ""
+
 #: inc/customizer/controls/plugin-control.php:33
 msgid "Install Plugin"
 msgstr ""
 
-#: inc/customizer/customizer.php:36
+#: inc/customizer/customizer.php:38
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer/customizer.php:41
+#: inc/customizer/customizer.php:43
 msgid "Background"
 msgstr ""
 
@@ -225,6 +271,38 @@ msgctxt "Color Option"
 msgid "Dark Gray"
 msgstr ""
 
+#: inc/customizer/sections/blog-settings.php:17
+msgid "Blog Settings"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:34
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:52
+msgid "Post Details"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:68
+msgid "Display date"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:84
+msgid "Display author"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:100
+msgid "Display categories"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:110
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:126
+msgid "Display tags"
+msgstr ""
+
 #: inc/customizer/sections/license-settings.php:19
 msgid "License"
 msgstr ""
@@ -235,7 +313,7 @@ msgid ""
 "automatic theme updates and support."
 msgstr ""
 
-#: inc/customizer/sections/license-settings.php:35
+#: inc/customizer/sections/license-settings.php:44
 msgid "License Key"
 msgstr ""
 
@@ -442,12 +520,16 @@ msgctxt "post category"
 msgid "in %s"
 msgstr ""
 
-#: inc/template-tags.php:238
+#: inc/template-tags.php:236
+msgid "Tags: "
+msgstr ""
+
+#: inc/template-tags.php:255
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:256
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
