@@ -1549,33 +1549,6 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
-}
-
-/* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
-	width: auto;
-}
-
-/* Video Embed Block */
-.wp-block-embed-vimeo.alignfull iframe {
-	width: 100%;
-}
-
 /* Button Block */
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
@@ -1660,6 +1633,81 @@ object {
 
 .wp-block-pullquote.is-style-solid-color blockquote cite {
 	color: inherit;
+}
+
+/* Media Text Block */
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
+/* Cover Block */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+.wp-block-cover.alignwide,
+.wp-block-cover.alignfull {
+	width: auto;
+}
+
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
+
+/* Group Block */
+.wp-block-group.has-background {
+	padding: 1.25rem;
+}
+
+.wp-block-group.alignwide,
+.wp-block-group.alignfull {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.wp-block-group.has-background a:link,
+.wp-block-group.has-background a:visited {
+	color: inherit;
+}
+
+.wp-block-group.has-background a:hover,
+.wp-block-group.has-background a:active {
+	text-decoration: none;
+}
+
+.wp-block-group.alignwide,
+.wp-block-group.alignfull {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
+.wp-block-group.has-text-color .wp-block-quote,
+.wp-block-group.has-text-color .wp-block-quote cite,
+.wp-block-group.has-text-color .wp-block-pullquote,
+.wp-block-group.has-text-color .wp-block-pullquote blockquote:not(.has-text-color),
+.wp-block-group.has-text-color .wp-block-pullquote blockquote cite {
+	color: inherit;
+}
+
+.wp-block-group.has-text-color .wp-block-pullquote,
+.wp-block-group.has-text-color .wp-block-quote {
+	border-color: inherit;
 }
 
 /* GT Section Block */
@@ -2083,6 +2131,46 @@ object {
 		-ms-transform: rotate(-90deg);
 		/* IE 9 */
 		transform: rotate(-90deg);
+	}
+}
+
+/*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+	.wp-block-group.has-background {
+		padding: 1.5rem;
+	}
+
+	.wp-block-group.alignwide,
+	.wp-block-group.alignfull {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+/* Columns Block */
+@media only screen and (min-width: 800px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2.5rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 	}
 }
 
