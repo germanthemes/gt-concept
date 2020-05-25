@@ -746,6 +746,38 @@ textarea {
 	padding-top: 1.25rem;
 }
 
+/* Alignments */
+.entry-content > .alignwide {
+	max-width: 960px;
+}
+
+.entry-content > .alignfull {
+	max-width: 100vw;
+}
+
+.entry-content > .alignwide,
+.entry-content > .alignfull {
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
+}
+
+.entry-content > .alignwide > [class*="__inner-container"] > *,
+.entry-content > .alignfull > [class*="__inner-container"] > * {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+}
+
+.entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
+.entry-content > .alignfull > [class*="__inner-container"] > *.alignwide {
+	max-width: 960px;
+}
+
+.entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
+.entry-content > .alignfull > [class*="__inner-container"] > *.alignfull {
+	max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
@@ -1181,13 +1213,6 @@ textarea {
 .entry-content {
 	font-size: 18px;
 	font-size: 1.125rem;
-}
-
-.entry-content > .alignwide,
-.entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2);
-	margin-right: calc( -100vw / 2 + 100% / 2);
-	max-width: 100vw;
 }
 
 /* Featured Images */
@@ -2131,17 +2156,35 @@ object {
 # - Theme Options
 --------------------------------------------------------------*/
 
-/* Fullwidth Page Layout */
+/* Fullwidth Page Template */
 body.fullwidth-page-layout .site-content .site-main {
 	max-width: 1200px;
+}
+
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignwide {
+	max-width: 1440px;
+}
+
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *,
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > * {
+	max-width: 1200px;
+}
+
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide {
+	max-width: 1440px;
+}
+
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
+body.fullwidth-page-layout .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignfull {
+	max-width: 100%;
 }
 
 /* Adjust Wide Blocks */
 @media only screen and (min-width: 960px) {
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2);
-		margin-right: calc( -100vw / 2 + 100% / 2);
-		max-width: 100vw;
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
 	}
 }
 
@@ -2149,7 +2192,6 @@ body.fullwidth-page-layout .site-content .site-main {
 	body.fullwidth-page-layout .entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: 1440px;
 	}
 }
 
