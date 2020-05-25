@@ -61,6 +61,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: inherit;
 }
 
+/* Button Block */
+.editor-styles-wrapper .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
+.editor-styles-wrapper .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
+	background-color: var(--button-hover-color) !important;
+}
+
 /* GT Section Block */
 .gt-background-section .gt-section-content {
 	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
