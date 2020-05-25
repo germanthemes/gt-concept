@@ -19,29 +19,10 @@
 	text-decoration: none;
 }
 
-.wp-block-group.alignwide,
-.wp-block-group.alignfull {
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-}
-
 .wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
 	margin-top: 0;
 }
 
 .wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
 	margin-bottom: 0;
-}
-
-.wp-block-group.has-text-color .wp-block-quote,
-.wp-block-group.has-text-color .wp-block-quote cite,
-.wp-block-group.has-text-color .wp-block-pullquote,
-.wp-block-group.has-text-color .wp-block-pullquote blockquote:not(.has-text-color),
-.wp-block-group.has-text-color .wp-block-pullquote blockquote cite {
-	color: inherit;
-}
-
-.wp-block-group.has-text-color .wp-block-pullquote,
-.wp-block-group.has-text-color .wp-block-quote {
-	border-color: inherit;
 }
