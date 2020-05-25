@@ -277,26 +277,6 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 # - Blocks
 --------------------------------------------------------------*/
 
-/* Button Block */
-.wp-block-button__link:link,
-.wp-block-button__link:visited {
-	text-decoration: none;
-}
-
-.wp-block-button__link:hover,
-.wp-block-button__link:active {
-	text-decoration: underline;
-}
-
-/* Image Block */
-.wp-block-image {
-	margin-bottom: 1.5em;
-}
-
-.wp-block-image img {
-	vertical-align: top;
-}
-
 /* Media Text Block */
 .wp-block-media-text {
 	margin-bottom: 1.5em;
@@ -319,16 +299,27 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	width: auto;
 }
 
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
+
+/* Button Block */
+.wp-block-button__link:link,
+.wp-block-button__link:visited {
+	text-decoration: none;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:active {
+	text-decoration: underline;
+}
+
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 120px;
 	height: 4px;
 	background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Video Embed Block */
-.wp-block-embed-vimeo.alignfull iframe {
-	width: 100%;
 }
 
 /* Quote Block */
