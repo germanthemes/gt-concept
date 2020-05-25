@@ -146,3 +146,26 @@
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):active {
 	color: inherit;
 }
+
+/* Social Icons Block */
+.wp-block-social-links {
+	flex-wrap: wrap;
+}
+
+.wp-social-link {
+	margin-bottom: 8px;
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link a,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link a:active,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link a:hover,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link a:visited,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link svg {
+	color: #fff;
+	fill: #fff;
+}
+
+.wp-block-social-links.is-style-logos-only .wp-social-link a {
+	color: currentColor;
+	fill: currentColor;
+}
