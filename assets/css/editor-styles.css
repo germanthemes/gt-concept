@@ -527,12 +527,13 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 /* Cover Block */
-body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-	line-height: 1.25;
+.wp-block-cover:not(.block-editor-media-placeholder) {
+	color: #fff;
+}
+
+.wp-block-cover:not(.block-editor-media-placeholder) .wp-block-cover__inner-container,
+.wp-block-cover:not(.block-editor-media-placeholder) .block-editor-block-list__block {
+	color: inherit;
 }
 
 /* Preformatted Block */
