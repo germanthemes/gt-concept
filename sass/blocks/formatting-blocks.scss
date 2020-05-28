@@ -1,3 +1,16 @@
+/* Block Spacing */
+.wp-block-columns,
+.wp-block-group,
+.wp-block-button,
+.wp-block-buttons,
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-image,
+.wp-block-gallery,
+.wp-block-cover,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
 
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
@@ -71,10 +84,6 @@
 }
 
 /* Button Block */
-.wp-block-button {
-	margin-bottom: 1.5em;
-}
-
 .wp-block-button.aligncenter {
 	text-align: center;
 }

@@ -277,6 +277,20 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 # - Blocks
 --------------------------------------------------------------*/
 
+/* Block Spacing */
+.wp-block-columns,
+.wp-block-group,
+.wp-block-button,
+.wp-block-buttons,
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-image,
+.wp-block-gallery,
+.wp-block-cover,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 120px;
@@ -353,10 +367,6 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 /* Button Block */
-.wp-block-button {
-	margin-bottom: 1.5em;
-}
-
 .wp-block-button.aligncenter {
 	text-align: center;
 }
@@ -457,26 +467,21 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	fill: currentColor;
 }
 
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
-}
-
 /* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
+.wp-block-cover,
+.wp-block-cover-image {
 	width: auto;
+	padding: 1.25rem;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:first-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:last-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:last-child {
+	margin-bottom: 0;
 }
 
 /* Video Embed Block */
@@ -524,6 +529,44 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .gt-background-section .gt-section-content.gt-full-width {
 	max-width: 1200px;
+}
+
+@media only screen and (min-width: 480px) {
+	.wp-block-group.has-background,
+	.wp-block-cover,
+	.wp-block-cover-image {
+		padding: 1.5rem;
+	}
+
+	.wp-block-group.alignwide,
+	.wp-block-group.alignfull {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2.5rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
 }
 
 /* Cover Block */

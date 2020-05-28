@@ -1,22 +1,16 @@
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
-}
-
 /* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	@include font-size(32);
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
+.wp-block-cover,
+.wp-block-cover-image {
 	width: auto;
+	padding: 1.25rem;
+
+	> .wp-block-cover__inner-container > *:first-child {
+		margin-top: 0;
+	}
+
+	> .wp-block-cover__inner-container > *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* Video Embed Block */

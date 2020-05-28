@@ -1549,6 +1549,20 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
+/* Block Spacing */
+.wp-block-columns,
+.wp-block-group,
+.wp-block-button,
+.wp-block-buttons,
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-image,
+.wp-block-gallery,
+.wp-block-cover,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 120px;
@@ -1625,10 +1639,6 @@ object {
 }
 
 /* Button Block */
-.wp-block-button {
-	margin-bottom: 1.5em;
-}
-
 .wp-block-button.aligncenter {
 	text-align: center;
 }
@@ -1729,26 +1739,21 @@ object {
 	fill: currentColor;
 }
 
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
-}
-
 /* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
+.wp-block-cover,
+.wp-block-cover-image {
 	width: auto;
+	padding: 1.25rem;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:first-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:last-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:last-child {
+	margin-bottom: 0;
 }
 
 /* Video Embed Block */
@@ -2212,7 +2217,9 @@ object {
 ## - Media Queries for Blocks
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
-	.wp-block-group.has-background {
+	.wp-block-group.has-background,
+	.wp-block-cover,
+	.wp-block-cover-image {
 		padding: 1.5rem;
 	}
 
