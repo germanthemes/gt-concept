@@ -1,3 +1,13 @@
+/* Media Blocks Spacing */
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-image,
+.wp-block-gallery,
+.wp-block-cover,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
 /* Cover Block */
 .wp-block-cover,
 .wp-block-cover-image {
@@ -10,6 +20,13 @@
 
 	> .wp-block-cover__inner-container > *:last-child {
 		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.wp-block-cover,
+	.wp-block-cover-image {
+		padding: 1.5rem;
 	}
 }
 
