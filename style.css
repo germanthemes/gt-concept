@@ -1674,6 +1674,10 @@ object {
 }
 
 /* Button Block */
+.wp-block-button {
+	color: inherit;
+}
+
 .wp-block-button.aligncenter {
 	text-align: center;
 }
@@ -1735,20 +1739,18 @@ object {
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
-.wp-block-button__link.is-style-outline:not(.has-text-color),
-.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link,
-.wp-block-media-text .wp-block-button.is-style-outline .wp-block-button__link {
+.wp-block-button__link.is-style-outline:not(.has-text-color) {
 	color: inherit;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:active {
-	text-decoration: underline;
+	color: inherit;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):active {
-	color: inherit;
+	text-decoration: underline;
 }
 
 /* Social Icons Block */
