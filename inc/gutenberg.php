@@ -101,6 +101,13 @@ function gt_concept_gutenberg_support() {
 
 	// Register Large Buttons Block style.
 	register_block_style( 'core/buttons', array(
+		'name'         => 'gt-medium',
+		'label'        => esc_html__( 'GT Medium', 'gt-concept' ),
+		'style_handle' => 'gt-concept-stylesheet',
+	) );
+
+	// Register Large Buttons Block style.
+	register_block_style( 'core/buttons', array(
 		'name'         => 'gt-large',
 		'label'        => esc_html__( 'GT Large', 'gt-concept' ),
 		'style_handle' => 'gt-concept-stylesheet',
