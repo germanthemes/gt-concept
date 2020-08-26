@@ -125,6 +125,16 @@ add_action( 'wp_enqueue_scripts', 'gt_concept_scripts' );
 
 
 /**
+* Enqueue theme fonts.
+*/
+function gt_concept_theme_fonts() {
+	wp_enqueue_style( 'gt-concept-theme-fonts', get_template_directory_uri() . '/assets/css/theme-fonts.css', array(), '20200826' );
+}
+add_action( 'wp_enqueue_scripts', 'gt_concept_theme_fonts', 1 );
+add_action( 'enqueue_block_editor_assets', 'gt_concept_theme_fonts', 1 );
+
+
+/**
  * Register widget areas and custom widgets.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
