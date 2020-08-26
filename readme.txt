@@ -2,9 +2,9 @@
 Author URI: https://germanthemes.de
 Theme URI: https://germanthemes.de/themes/gt-concept/
 Contributors: germanthemes
-Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.0
-Tested up to: 5.4
+Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,40 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+== Changelog ==
+
+= 1.5 - 2020-08-26 =
+* added block patterns
+* added default font
+* fixed font control in Customizer
+
+= 1.4 - 2020-06-30 =
+* added small and large size button styles to Buttons block
+* fixed outline button style of Button block
+
+= 1.3 - 2020-05-28 =
+* fixed alignment of nested blocks
+* fixed text color issues in Editor
+* adjusted spacing of Group block
+* improved styling for Cover block
+* improved styling of Button block
+
+= 1.2 - 2019-12-12 =
+* added Blog Settings to Customizer
+* added Comments section to single posts and pages
+* added new wp_body_open tag
+* added wp_link_pages to single view
+* added theme links to Customizer
+* improved loading of custom fonts for typography settings in Customizer preview
+
+= 1.1 - 2019-07-15 =
+* added Customizer section for Block Color options
+* added Customizer section for Theme Color options
+* added support and Customizer control for the GT Local Fonts plugin
+
+= 1.0 - 2020-04-02 =
+* First Release
+
 == Ressources ==
 
 GT Concept bundles the following third-party resources:
@@ -57,6 +91,10 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
+
+5. Roboto Font - https://fonts.google.com/specimen/Roboto
+License: Distributed under the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+Copyright: Christian Robertson
 
 Images used in screenshot.jpg
 
