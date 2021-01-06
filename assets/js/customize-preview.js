@@ -341,20 +341,8 @@
 	}
 
 	function loadCustomFont( font, type ) {
-		if (typeof gtConceptFontSettings === 'undefined') {
-			return;
-		}
-
-		var defaultFonts = ['Arial', 'Arial Black', 'Courier New', 'Georgia', 'Helvetica',
-			'Impact', 'Palatino, Palatino Linotype', 'SystemFontStack', 'Tahoma',
-			'Trebuchet MS, Trebuchet', 'Times New Roman, Times', 'Verdana'];
-
-		if( defaultFonts.includes( font ) ) {
-			return;
-		}
-
-		var fontFile = font.split( " " ).join( "-" ).toLowerCase();
-		var fontFileURL = gtConceptFontSettings.pluginURL + fontFile + ".css";
+		var fontFile = font.split( " " ).join( "+" );
+		var fontFileURL = "https://fonts.googleapis.com/css?family=" + fontFile + ":400,700";
 
 		var fontStylesheet = "<link id='gt-concept-custom-" + type + "' href='" + fontFileURL + "' rel='stylesheet' type='text/css'>";
 		var checkLink = $( "head" ).find( "#gt-concept-custom-" + type ).length;
