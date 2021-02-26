@@ -91,49 +91,49 @@
 	/* Primary Color Option */
 	wp.customize( 'gt_concept_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--primary-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--primary-color', newval );
 		} );
 	} );
 
 	/* Secondary Color Option */
 	wp.customize( 'gt_concept_theme_options[secondary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--secondary-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--secondary-color', newval );
 		} );
 	} );
 
 	/* Accent Color Option */
 	wp.customize( 'gt_concept_theme_options[accent_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--accent-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--accent-color', newval );
 		} );
 	} );
 
 	/* Highlight Color Option */
 	wp.customize( 'gt_concept_theme_options[highlight_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--highlight-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--highlight-color', newval );
 		} );
 	} );
 
 	/* Light Gray Color Option */
 	wp.customize( 'gt_concept_theme_options[light_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--light-gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--light-gray-color', newval );
 		} );
 	} );
 
 	/* Gray Color Option */
 	wp.customize( 'gt_concept_theme_options[gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--gray-color', newval );
 		} );
 	} );
 
 	/* Dark Gray Color Option */
 	wp.customize( 'gt_concept_theme_options[dark_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--dark-gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--dark-gray-color', newval );
 		} );
 	} );
 
@@ -148,9 +148,9 @@
 				text_color = '#ffffff';
 			}
 
-			document.documentElement.style.setProperty( '--link-color', newval );
-			document.documentElement.style.setProperty( '--button-color', newval );
-			document.documentElement.style.setProperty( '--button-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-concept--link-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--button-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--button-text-color', text_color );
 		} );
 	} );
 
@@ -167,30 +167,30 @@
 				border_color = 'rgba(0, 0, 0, 0.1)';
 			}
 
-			document.documentElement.style.setProperty( '--header-background-color', newval );
-			document.documentElement.style.setProperty( '--header-text-color', text_color );
-			document.documentElement.style.setProperty( '--header-border-color', border_color );
+			document.documentElement.style.setProperty( '--gt-concept--header-background-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--header-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-concept--header-border-color', border_color );
 		} );
 	} );
 
 	/* Navigation Color Option */
 	wp.customize( 'gt_concept_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--header-text-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--header-text-hover-color', newval );
 		} );
 	} );
 
 	/* Title Color Option */
 	wp.customize( 'gt_concept_theme_options[title_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--title-color', newval );
 		} );
 	} );
 
 	/* Title Hover Color Option */
 	wp.customize( 'gt_concept_theme_options[title_hover_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--title-hover-color', newval );
 		} );
 	} );
 
@@ -207,10 +207,10 @@
 				link_color = 'rgba(255, 255, 255, 0.6)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-background-color', newval );
-			document.documentElement.style.setProperty( '--footer-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-link-color', link_color );
-			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
+			document.documentElement.style.setProperty( '--gt-concept--footer-background-color', newval );
+			document.documentElement.style.setProperty( '--gt-concept--footer-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-concept--footer-link-color', link_color );
+			document.documentElement.style.setProperty( '--gt-concept--footer-link-hover-color', text_color );
 		} );
 	} );
 
@@ -226,7 +226,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--text-font', newFont );
+			document.documentElement.style.setProperty( '--gt-concept--text-font', newFont );
 		} );
 	} );
 
@@ -242,7 +242,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--title-font', newFont );
+			document.documentElement.style.setProperty( '--gt-concept--title-font', newFont );
 		} );
 	} );
 
@@ -250,7 +250,7 @@
 	wp.customize( 'gt_concept_theme_options[title_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--title-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--gt-concept--title-font-weight', fontWeight );
 		} );
 	} );
 
@@ -258,7 +258,7 @@
 	wp.customize( 'gt_concept_theme_options[title_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--title-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--gt-concept--title-text-transform', textTransform );
 		} );
 	} );
 
@@ -274,7 +274,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--navi-font', newFont );
+			document.documentElement.style.setProperty( '--gt-concept--navi-font', newFont );
 		} );
 	} );
 
@@ -282,7 +282,7 @@
 	wp.customize( 'gt_concept_theme_options[navi_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--navi-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--gt-concept--navi-font-weight', fontWeight );
 		} );
 	} );
 
@@ -290,7 +290,7 @@
 	wp.customize( 'gt_concept_theme_options[navi_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--navi-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--gt-concept--navi-text-transform', textTransform );
 		} );
 	} );
 

@@ -8,36 +8,36 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #ff7755;
-	--secondary-color: #d9512f;
-	--accent-color: #55aaff;
-	--highlight-color: #00bb88;
-	--light-gray-color: #e4e4e4;
-	--gray-color: #848484;
-	--dark-gray-color: #242424;
-	--link-color: #ff7755;
-	--link-hover-color: #242424;
-	--button-color: #ff7755;
-	--button-text-color: #fff;
-	--button-hover-color: #242424;
-	--button-hover-text-color: #fff;
-	--header-background-color: #fff;
-	--header-text-color: #242424;
-	--header-text-hover-color: #ff7755;
-	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: #242424;
-	--title-hover-color: #ff7755;
-	--footer-background-color: #d9512f;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.6);
-	--footer-link-hover-color: #fff;
-	--text-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--title-text-transform: none;
-	--navi-font: "Roboto", arial, helvetica, sans-serif;
-	--navi-font-weight: bold;
-	--navi-text-transform: none;
+	--gt-concept--primary-color: #ff7755;
+	--gt-concept--secondary-color: #d9512f;
+	--gt-concept--accent-color: #55aaff;
+	--gt-concept--highlight-color: #00bb88;
+	--gt-concept--light-gray-color: #e4e4e4;
+	--gt-concept--gray-color: #848484;
+	--gt-concept--dark-gray-color: #242424;
+	--gt-concept--link-color: #ff7755;
+	--gt-concept--link-hover-color: #242424;
+	--gt-concept--button-color: #ff7755;
+	--gt-concept--button-text-color: #fff;
+	--gt-concept--button-hover-color: #242424;
+	--gt-concept--button-hover-text-color: #fff;
+	--gt-concept--header-background-color: #fff;
+	--gt-concept--header-text-color: #242424;
+	--gt-concept--header-text-hover-color: #ff7755;
+	--gt-concept--header-border-color: rgba(0, 0, 0, 0.1);
+	--gt-concept--title-color: #242424;
+	--gt-concept--title-hover-color: #ff7755;
+	--gt-concept--footer-background-color: #d9512f;
+	--gt-concept--footer-text-color: #fff;
+	--gt-concept--footer-link-color: rgba(255, 255, 255, 0.6);
+	--gt-concept--footer-link-hover-color: #fff;
+	--gt-concept--text-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--title-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--title-font-weight: bold;
+	--gt-concept--title-text-transform: none;
+	--gt-concept--navi-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--navi-font-weight: bold;
+	--gt-concept--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -73,11 +73,11 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-concept--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-concept--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-concept--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -110,7 +110,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Typography */
 .editor-styles-wrapper {
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.75;
@@ -129,7 +129,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .editor-styles-wrapper a {
 	color: #ff7755;
-	color: var(--link-color);
+	color: var(--gt-concept--link-color);
 }
 
 .editor-styles-wrapper hr {
@@ -162,7 +162,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	margin-top: 1em;
 	margin-bottom: 0.75em;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-concept--title-font);
 	line-height: 1.4;
 }
 
@@ -305,7 +305,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 }
 
 /* Pullquote Block */
@@ -334,7 +334,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-pullquote blockquote cite {
 	color: #242424;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 	font-style: normal;
 }
 
@@ -432,18 +432,18 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-concept--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #ff7755;
-	background-color: var(--button-color);
+	background-color: var(--gt-concept--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #242424;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-concept--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -456,7 +456,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-concept--button-hover-text-color);
 	background-color: var(--button-hover-color) !important;
 	text-decoration: none;
 }
@@ -728,22 +728,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Text Colors */
 .has-primary-color {
 	color: #ff7755;
-	color: var(--primary-color);
+	color: var(--gt-concept--primary-color);
 }
 
 .has-secondary-color {
 	color: #d9512f;
-	color: var(--secondary-color);
+	color: var(--gt-concept--secondary-color);
 }
 
 .has-accent-color {
 	color: #55aaff;
-	color: var(--accent-color);
+	color: var(--gt-concept--accent-color);
 }
 
 .has-highlight-color {
 	color: #00bb88;
-	color: var(--highlight-color);
+	color: var(--gt-concept--highlight-color);
 }
 
 .has-white-color {
@@ -752,17 +752,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-color {
 	color: #e4e4e4;
-	color: var(--light-gray-color);
+	color: var(--gt-concept--light-gray-color);
 }
 
 .has-gray-color {
 	color: #848484;
-	color: var(--gray-color);
+	color: var(--gt-concept--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #242424;
-	color: var(--dark-gray-color);
+	color: var(--gt-concept--dark-gray-color);
 }
 
 .has-black-color {
@@ -772,22 +772,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #ff7755;
-	background-color: var(--primary-color);
+	background-color: var(--gt-concept--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #d9512f;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-concept--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #55aaff;
-	background-color: var(--accent-color);
+	background-color: var(--gt-concept--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #00bb88;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-concept--highlight-color);
 }
 
 .has-white-background-color {
@@ -796,17 +796,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-background-color {
 	background-color: #e4e4e4;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-concept--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #848484;
-	background-color: var(--gray-color);
+	background-color: var(--gt-concept--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #242424;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-concept--dark-gray-color);
 }
 
 .has-black-background-color {

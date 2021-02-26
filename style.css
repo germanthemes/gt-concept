@@ -47,36 +47,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #ff7755;
-	--secondary-color: #d9512f;
-	--accent-color: #55aaff;
-	--highlight-color: #00bb88;
-	--light-gray-color: #e4e4e4;
-	--gray-color: #848484;
-	--dark-gray-color: #242424;
-	--link-color: #ff7755;
-	--link-hover-color: #242424;
-	--button-color: #ff7755;
-	--button-text-color: #fff;
-	--button-hover-color: #242424;
-	--button-hover-text-color: #fff;
-	--header-background-color: #fff;
-	--header-text-color: #242424;
-	--header-text-hover-color: #ff7755;
-	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: #242424;
-	--title-hover-color: #ff7755;
-	--footer-background-color: #d9512f;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.6);
-	--footer-link-hover-color: #fff;
-	--text-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--title-text-transform: none;
-	--navi-font: "Roboto", arial, helvetica, sans-serif;
-	--navi-font-weight: bold;
-	--navi-text-transform: none;
+	--gt-concept--primary-color: #ff7755;
+	--gt-concept--secondary-color: #d9512f;
+	--gt-concept--accent-color: #55aaff;
+	--gt-concept--highlight-color: #00bb88;
+	--gt-concept--light-gray-color: #e4e4e4;
+	--gt-concept--gray-color: #848484;
+	--gt-concept--dark-gray-color: #242424;
+	--gt-concept--link-color: #ff7755;
+	--gt-concept--link-hover-color: #242424;
+	--gt-concept--button-color: #ff7755;
+	--gt-concept--button-text-color: #fff;
+	--gt-concept--button-hover-color: #242424;
+	--gt-concept--button-hover-text-color: #fff;
+	--gt-concept--header-background-color: #fff;
+	--gt-concept--header-text-color: #242424;
+	--gt-concept--header-text-hover-color: #ff7755;
+	--gt-concept--header-border-color: rgba(0, 0, 0, 0.1);
+	--gt-concept--title-color: #242424;
+	--gt-concept--title-hover-color: #ff7755;
+	--gt-concept--footer-background-color: #d9512f;
+	--gt-concept--footer-text-color: #fff;
+	--gt-concept--footer-link-color: rgba(255, 255, 255, 0.6);
+	--gt-concept--footer-link-hover-color: #fff;
+	--gt-concept--text-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--title-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--title-font-weight: bold;
+	--gt-concept--title-text-transform: none;
+	--gt-concept--navi-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-concept--navi-font-weight: bold;
+	--gt-concept--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -310,7 +310,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 	line-height: 1.75;
 }
 
@@ -323,11 +323,11 @@ h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-concept--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-concept--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-concept--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -516,7 +516,7 @@ td {
 
 a {
 	color: #ff7755;
-	color: var(--link-color);
+	color: var(--gt-concept--link-color);
 	text-decoration: underline;
 }
 
@@ -524,7 +524,7 @@ a:hover,
 a:focus,
 a:active {
 	color: #242424;
-	color: var(--link-hover-color);
+	color: var(--gt-concept--link-hover-color);
 	text-decoration: none;
 }
 
@@ -548,9 +548,9 @@ input[type="submit"] {
 	padding: 0.5em 1em;
 	border: none;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-concept--button-text-color);
 	background-color: #ff7755;
-	background-color: var(--button-color);
+	background-color: var(--gt-concept--button-color);
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 15px;
@@ -570,9 +570,9 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-concept--button-hover-text-color);
 	background-color: #242424;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-concept--button-hover-color);
 }
 
 input[type="text"],
@@ -637,13 +637,13 @@ textarea {
 	padding: 0.6em 0.8em;
 	border: none;
 	background-color: #ff7755;
-	background-color: var(--button-color);
+	background-color: var(--gt-concept--button-color);
 }
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
 	background-color: #242424;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-concept--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
@@ -651,13 +651,13 @@ textarea {
 	width: 22px;
 	height: 22px;
 	fill: #fff;
-	fill: var(--button-text-color);
+	fill: var(--gt-concept--button-text-color);
 }
 
 .search-form .search-submit:hover .icon-search,
 .search-form .search-submit:active .icon-search {
 	fill: #fff;
-	fill: var(--button-hover-text-color);
+	fill: var(--gt-concept--button-hover-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -786,7 +786,7 @@ textarea {
 --------------------------------------------------------------*/
 .site-header {
 	background-color: #fff;
-	background-color: var(--header-background-color);
+	background-color: var(--gt-concept--header-background-color);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid var(--header-border-color);
 }
@@ -829,29 +829,29 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	text-decoration: none;
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-concept--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-concept--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-concept--title-text-transform);
 	line-height: 1.4;
 }
 
 .site-title a:link,
 .site-title a:visited {
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
 	color: #ff7755;
-	color: var(--header-text-hover-color);
+	color: var(--gt-concept--header-text-hover-color);
 }
 
 .site-description {
@@ -859,7 +859,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	font-size: 13px;
 	font-size: 0.8125rem;
 }
@@ -891,16 +891,16 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	list-style: none;
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-concept--navi-font);
 	font-weight: bold;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-concept--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-concept--navi-text-transform);
 }
 
 .main-navigation > ul {
@@ -937,19 +937,19 @@ textarea {
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
 	color: #ff7755;
-	color: var(--header-text-hover-color);
+	color: var(--gt-concept--header-text-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
 	color: #ff7755;
-	color: var(--header-text-hover-color);
+	color: var(--gt-concept--header-text-hover-color);
 	text-decoration: underline;
 }
 
@@ -958,7 +958,7 @@ textarea {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	background-color: #fff;
-	background-color: var(--header-background-color);
+	background-color: var(--gt-concept--header-background-color);
 }
 
 .main-navigation ul ul.toggled-on {
@@ -986,16 +986,16 @@ textarea {
 	border: none;
 	background: none;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-concept--navi-font);
 	font-weight: bold;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-concept--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-concept--navi-text-transform);
 	text-align: left;
 }
 
@@ -1006,14 +1006,14 @@ textarea {
 .menu-toggle:focus {
 	outline: thin dotted;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	background: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:active {
 	color: #ff7755;
-	color: var(--header-text-hover-color);
+	color: var(--gt-concept--header-text-hover-color);
 	background: none;
 	cursor: pointer;
 }
@@ -1024,13 +1024,13 @@ textarea {
 	height: 28px;
 	vertical-align: top;
 	fill: #242424;
-	fill: var(--header-text-color);
+	fill: var(--gt-concept--header-text-color);
 }
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
 	fill: #ff7755;
-	fill: var(--header-text-hover-color);
+	fill: var(--gt-concept--header-text-hover-color);
 }
 
 .toggled-on .menu-toggle .icon-menu,
@@ -1055,7 +1055,7 @@ textarea {
 .dropdown-toggle:focus {
 	outline: thin dotted;
 	color: #242424;
-	color: var(--header-text-color);
+	color: var(--gt-concept--header-text-color);
 	background: none;
 }
 
@@ -1070,13 +1070,13 @@ textarea {
 	height: 20px;
 	vertical-align: top;
 	fill: #242424;
-	fill: var(--header-text-color);
+	fill: var(--gt-concept--header-text-color);
 }
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon {
 	fill: #ff7755;
-	fill: var(--header-text-hover-color);
+	fill: var(--gt-concept--header-text-hover-color);
 }
 
 .dropdown-toggle.toggled-on .icon {
@@ -1185,31 +1185,31 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #242424;
-	color: var(--title-color);
+	color: var(--gt-concept--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-concept--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-concept--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-concept--title-text-transform);
 	line-height: 1.4;
 }
 
 .entry-title a:link,
 .entry-title a:visited {
 	color: #242424;
-	color: var(--title-color);
+	color: var(--gt-concept--title-color);
 	text-decoration: none;
 }
 
 .entry-title a:hover,
 .entry-title a:active {
 	color: #ff7755;
-	color: var(--title-hover-color);
+	color: var(--gt-concept--title-hover-color);
 }
 
 /* Entry Content */
@@ -1294,9 +1294,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-concept--button-text-color);
 	background-color: #ff7755;
-	background-color: var(--button-color);
+	background-color: var(--gt-concept--button-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1307,9 +1307,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .pagination a:hover,
 .pagination a:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-concept--button-hover-text-color);
 	background-color: #242424;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-concept--button-hover-color);
 }
 
 /* Search & Archive Header */
@@ -1357,9 +1357,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding-top: 1.5rem;
 	padding-bottom: 1px;
 	color: #fff;
-	color: var(--footer-text-color);
+	color: var(--gt-concept--footer-text-color);
 	background-color: #d9512f;
-	background-color: var(--footer-background-color);
+	background-color: var(--gt-concept--footer-background-color);
 }
 
 .footer-widgets .widget {
@@ -1375,13 +1375,13 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .footer-widgets a:link,
 .footer-widgets a:visited {
 	color: rgba(255, 255, 255, 0.6);
-	color: var(--footer-link-color);
+	color: var(--gt-concept--footer-link-color);
 }
 
 .footer-widgets a:hover,
 .footer-widgets a:active {
 	color: #fff;
-	color: var(--footer-link-hover-color);
+	color: var(--gt-concept--footer-link-hover-color);
 }
 
 .footer-widgets .widget ul li a {
@@ -1579,7 +1579,7 @@ object {
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 }
 
 /* Pullquote Block */
@@ -1608,7 +1608,7 @@ object {
 .wp-block-pullquote blockquote cite {
 	color: #242424;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-concept--text-font);
 	font-style: normal;
 }
 
@@ -1706,18 +1706,18 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-concept--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #ff7755;
-	background-color: var(--button-color);
+	background-color: var(--gt-concept--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #242424;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-concept--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -1730,7 +1730,7 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-concept--button-hover-text-color);
 	background-color: var(--button-hover-color) !important;
 	text-decoration: none;
 }
@@ -1865,22 +1865,22 @@ object {
 /* Block Text Colors */
 .has-primary-color {
 	color: #ff7755;
-	color: var(--primary-color);
+	color: var(--gt-concept--primary-color);
 }
 
 .has-secondary-color {
 	color: #d9512f;
-	color: var(--secondary-color);
+	color: var(--gt-concept--secondary-color);
 }
 
 .has-accent-color {
 	color: #55aaff;
-	color: var(--accent-color);
+	color: var(--gt-concept--accent-color);
 }
 
 .has-highlight-color {
 	color: #00bb88;
-	color: var(--highlight-color);
+	color: var(--gt-concept--highlight-color);
 }
 
 .has-white-color {
@@ -1889,17 +1889,17 @@ object {
 
 .has-light-gray-color {
 	color: #e4e4e4;
-	color: var(--light-gray-color);
+	color: var(--gt-concept--light-gray-color);
 }
 
 .has-gray-color {
 	color: #848484;
-	color: var(--gray-color);
+	color: var(--gt-concept--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #242424;
-	color: var(--dark-gray-color);
+	color: var(--gt-concept--dark-gray-color);
 }
 
 .has-black-color {
@@ -1909,22 +1909,22 @@ object {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #ff7755;
-	background-color: var(--primary-color);
+	background-color: var(--gt-concept--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #d9512f;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-concept--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #55aaff;
-	background-color: var(--accent-color);
+	background-color: var(--gt-concept--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #00bb88;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-concept--highlight-color);
 }
 
 .has-white-background-color {
@@ -1933,17 +1933,17 @@ object {
 
 .has-light-gray-background-color {
 	background-color: #e4e4e4;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-concept--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #848484;
-	background-color: var(--gray-color);
+	background-color: var(--gt-concept--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #242424;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-concept--dark-gray-color);
 }
 
 .has-black-background-color {
@@ -2248,13 +2248,13 @@ object {
 		width: 14px;
 		height: 14px;
 		fill: #242424;
-		fill: var(--header-text-color);
+		fill: var(--gt-concept--header-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
 		fill: #ff7755;
-		fill: var(--header-text-hover-color);
+		fill: var(--gt-concept--header-text-hover-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
