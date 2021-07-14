@@ -75,8 +75,6 @@ function gt_concept_default_options() {
 		'navi_font'          => 'Roboto',
 		'navi_is_bold'       => true,
 		'navi_is_uppercase'  => false,
-		'license_key'        => '',
-		'license_status'     => 'inactive',
 	);
 
 	return apply_filters( 'gt_concept_default_options', $default_options );
