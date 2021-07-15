@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GT Concept\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-12-12 10:56+0100\n"
-"PO-Revision-Date: 2019-12-12 10:57+0100\n"
+"POT-Creation-Date: 2021-07-15 10:09+0200\n"
+"PO-Revision-Date: 2021-07-15 10:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: GermanThemes <support@germanthemes.de>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -44,97 +44,77 @@ msgstr "%s Kommentare"
 msgid "Comments are closed."
 msgstr "Kommentare sind geschlossen."
 
-#: functions.php:37
+#: functions.php:46
 msgid "Main Navigation"
 msgstr "Hauptnavigation"
 
-#: functions.php:109
+#: functions.php:118
 msgid "Expand child menu"
 msgstr "Untermenü öffnen"
 
-#: functions.php:110
+#: functions.php:119
 msgid "Collapse child menu"
 msgstr "Untermenü schließen"
 
-#: functions.php:136
+#: functions.php:179
 msgid "Blog Sidebar"
 msgstr "Blog Sidebar"
 
-#: functions.php:138
+#: functions.php:181
 msgctxt "widget area description"
 msgid "Appears on blog pages and single posts."
 msgstr "Erscheint auf Blog-Seiten und einzelnen Beiträgen."
 
-#: functions.php:147
+#: functions.php:190
 msgid "Footer Column 1"
 msgstr "Footer Spalte 1"
 
-#: functions.php:149
+#: functions.php:192
 msgctxt "widget area description"
 msgid "Appears in the first column in footer."
 msgstr "Erscheint in der ersten Spalte im Footer."
 
-#: functions.php:158
+#: functions.php:201
 msgid "Footer Column 2"
 msgstr "Footer Spalte 2"
 
-#: functions.php:160
+#: functions.php:203
 msgctxt "widget area description"
 msgid "Appears in the second column in footer."
 msgstr "Erscheint in der zweiten Spalte im Footer."
 
-#: functions.php:169
+#: functions.php:212
 msgid "Footer Column 3"
 msgstr "Footer Spalte 3"
 
-#: functions.php:171
+#: functions.php:214
 msgctxt "widget area description"
 msgid "Appears in the third column in footer."
 msgstr "Erscheint in der dritten Spalte im Footer."
 
-#: functions.php:180
+#: functions.php:223
 msgid "Footer Column 4"
 msgstr "Footer Spalte 4"
 
-#: functions.php:182
+#: functions.php:225
 msgctxt "widget area description"
 msgid "Appears in the fourth column in footer."
 msgstr "Erscheint in der vierten Spalte im Footer."
 
-#: functions.php:191
+#: functions.php:234
 msgid "Footer Copyright"
 msgstr "Footer Copyright"
 
-#: functions.php:193
+#: functions.php:236
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr "Erscheint in der unteren Zeile im Footer."
-
-#: functions.php:223
-msgid ""
-"Updating this theme will lose any customizations you have made. 'Cancel' to "
-"stop, 'OK' to update."
-msgstr ""
-"Bei der Aktualisierung dieses Themes gehen alle Modifikationen verloren. "
-"Klicke \"Abbrechen\" um zu stoppen, \"OK\" um zu aktualisieren."
-
-#: functions.php:224
-#, php-format
-msgid ""
-"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
-"title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
-"a>."
-msgstr ""
-"<strong>%1$s %2$s</strong> ist verfügbar. <a href=\"%3$s\" class=\"thickbox"
-"\" title=\"%4$s\">Finde heraus, was es Neues gibt</a> oder <a href=\"%5$s"
-"\"%6$s>aktualisiere jetzt</a>."
 
 #: header.php:26
 msgid "Skip to content"
 msgstr "Zum Inhalt springen"
 
-#: inc/admin/back-compat.php:42 inc/admin/back-compat.php:52
-#: inc/admin/back-compat.php:65
+#: inc/back-compat.php:42 inc/back-compat.php:52 inc/back-compat.php:65
 #, php-format
 msgid ""
 "%1$s requires at least WordPress version %2$s. You are running version %3$s. "
@@ -155,57 +135,6 @@ msgstr "Nächste Schriftart"
 msgctxt "default font button"
 msgid "Default"
 msgstr "Standard"
-
-#: inc/customizer/controls/license-control.php:51
-msgid "Activate License"
-msgstr "Lizenz aktivieren"
-
-#: inc/customizer/controls/license-control.php:52
-msgid "Deactivate License"
-msgstr "Lizenz deaktivieren"
-
-#: inc/customizer/controls/license-control.php:53
-msgid "Loading..."
-msgstr "Wird geladen..."
-
-#: inc/customizer/controls/license-control.php:54
-msgid "Active"
-msgstr "Aktiv"
-
-#: inc/customizer/controls/license-control.php:55
-msgid "Invalid"
-msgstr "Ungültig"
-
-#: inc/customizer/controls/license-control.php:56
-msgid "Expired"
-msgstr "Abgelaufen"
-
-#: inc/customizer/controls/license-control.php:57
-msgid "Inactive"
-msgstr "Inaktiv"
-
-#: inc/customizer/controls/license-control.php:58
-msgid "You are receiving updates."
-msgstr "Du erhältst Updates."
-
-#: inc/customizer/controls/license-control.php:59
-msgid ""
-"Please make sure you have not reached site limits and/or expiration date."
-msgstr ""
-"Bitte stelle sicher, dass du nicht das Seiten-Limit und/oder Ablaufdatum "
-"erreicht hast."
-
-#: inc/customizer/controls/license-control.php:60
-msgid ""
-"Your license has expired, renew today to continue getting updates and "
-"support!"
-msgstr ""
-"Deine Lizenz ist abgelaufen. Bitte erneuere sie, um weiterhin Updates und "
-"Support zu erhalten!"
-
-#: inc/customizer/controls/license-control.php:81
-msgid "License Status"
-msgstr "Lizenz-Status"
 
 #: inc/customizer/controls/links-control.php:25
 msgid "Theme Links"
@@ -231,15 +160,11 @@ msgstr "https://germanthemes.de/doku/gt-concept-dokumentation/"
 msgid "Theme Documentation"
 msgstr "Theme Dokumentation"
 
-#: inc/customizer/controls/plugin-control.php:33
-msgid "Install Plugin"
-msgstr "Plugin installieren"
-
-#: inc/customizer/customizer.php:38
+#: inc/customizer/customizer.php:36
 msgid "Theme Options"
 msgstr "Theme Optionen"
 
-#: inc/customizer/customizer.php:43
+#: inc/customizer/customizer.php:41
 msgid "Background"
 msgstr "Hintergrund"
 
@@ -314,22 +239,6 @@ msgstr "Einzelner Beitrag"
 msgid "Display tags"
 msgstr "Schlagwörter anzeigen"
 
-#: inc/customizer/sections/license-settings.php:19
-msgid "License"
-msgstr "Lizenz"
-
-#: inc/customizer/sections/license-settings.php:20
-msgid ""
-"Please enter your license key. An active license key is necessary for "
-"automatic theme updates and support."
-msgstr ""
-"Bitte trage deinen Lizenzschlüssel ein. Eine aktive Lizenz ist notwendig, um "
-"automatische Updates und Support zu erhalten."
-
-#: inc/customizer/sections/license-settings.php:44
-msgid "License Key"
-msgstr "Lizenzschlüssel"
-
 #: inc/customizer/sections/theme-color-settings.php:17
 msgid "Theme Colors"
 msgstr "Theme Farben"
@@ -364,6 +273,10 @@ msgctxt "Color Option"
 msgid "Footer Widgets"
 msgstr "Footer Widgets"
 
+#: inc/customizer/sections/theme-info-settings.php:19
+msgid "Theme Info"
+msgstr "Theme Info"
+
 #: inc/customizer/sections/typography-settings.php:19
 msgid "Typography"
 msgstr "Typografie"
@@ -393,18 +306,6 @@ msgstr "Großbuchstaben"
 msgctxt "Font Setting"
 msgid "Navigation"
 msgstr "Navigation"
-
-#: inc/customizer/sections/typography-settings.php:146
-msgid "More Fonts"
-msgstr "Weitere Schriftarten"
-
-#: inc/customizer/sections/typography-settings.php:147
-msgid ""
-"You can install the GT Local Fonts plugin to extend the typography options "
-"with additional local GDPR-compatible fonts."
-msgstr ""
-"Du kannst das GT Local Fonts Plugin installieren, um die Typografie-Optionen "
-"mit zusätzlichen, lokalen und DSGVO-kompatiblen Schriftarten zu erweitern."
 
 #: inc/customizer/sections/website-settings.php:40
 msgid "Display Site Title"
@@ -479,31 +380,63 @@ msgctxt "block font size"
 msgid "Extra Large"
 msgstr "Sehr groß"
 
-#: inc/gutenberg.php:113
+#: inc/gutenberg.php:98
+msgid "GT Small"
+msgstr "GT Klein"
+
+#: inc/gutenberg.php:105
+msgid "GT Medium"
+msgstr "GT Medium"
+
+#: inc/gutenberg.php:112
+msgid "GT Large"
+msgstr "GT Groß"
+
+#: inc/gutenberg.php:120
+msgid "GT Concept"
+msgstr "GT Concept"
+
+#: inc/gutenberg.php:124
+msgid "Hero Section"
+msgstr "Hero Abschnitt"
+
+#: inc/gutenberg.php:130
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: inc/gutenberg.php:136
+msgid "Call to Action"
+msgstr "Call to Action"
+
+#: inc/gutenberg.php:142
+msgid "Services"
+msgstr "Services"
+
+#: inc/gutenberg.php:166
 msgid "Theme Settings"
 msgstr "Theme Einstellungen"
 
-#: inc/gutenberg.php:114
+#: inc/gutenberg.php:167
 msgid "Page Options"
 msgstr "Seiten-Optionen"
 
-#: inc/gutenberg.php:115
+#: inc/gutenberg.php:168
 msgid "Page Layout"
 msgstr "Seiten-Layout"
 
-#: inc/gutenberg.php:116
+#: inc/gutenberg.php:169
 msgid "Default"
 msgstr "Standard"
 
-#: inc/gutenberg.php:117
+#: inc/gutenberg.php:170
 msgid "Full-width"
 msgstr "Volle Breite"
 
-#: inc/gutenberg.php:118
+#: inc/gutenberg.php:171
 msgid "Hide title?"
 msgstr "﻿Titel ausblenden?"
 
-#: inc/gutenberg.php:119
+#: inc/gutenberg.php:172
 msgid "Remove bottom margin?"
 msgstr "Abstand nach unten entfernen?"
 
@@ -603,3 +536,87 @@ msgstr ""
 #: template-parts/post/content.php:24
 msgid "Continue reading"
 msgstr "Weiterlesen"
+
+#~ msgid ""
+#~ "Updating this theme will lose any customizations you have made. 'Cancel' "
+#~ "to stop, 'OK' to update."
+#~ msgstr ""
+#~ "Bei der Aktualisierung dieses Themes gehen alle Modifikationen verloren. "
+#~ "Klicke \"Abbrechen\" um zu stoppen, \"OK\" um zu aktualisieren."
+
+#, php-format
+#~ msgid ""
+#~ "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox"
+#~ "\" title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
+#~ "now</a>."
+#~ msgstr ""
+#~ "<strong>%1$s %2$s</strong> ist verfügbar. <a href=\"%3$s\" class="
+#~ "\"thickbox\" title=\"%4$s\">Finde heraus, was es Neues gibt</a> oder <a "
+#~ "href=\"%5$s\"%6$s>aktualisiere jetzt</a>."
+
+#~ msgid "Activate License"
+#~ msgstr "Lizenz aktivieren"
+
+#~ msgid "Deactivate License"
+#~ msgstr "Lizenz deaktivieren"
+
+#~ msgid "Loading..."
+#~ msgstr "Wird geladen..."
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Invalid"
+#~ msgstr "Ungültig"
+
+#~ msgid "Expired"
+#~ msgstr "Abgelaufen"
+
+#~ msgid "Inactive"
+#~ msgstr "Inaktiv"
+
+#~ msgid "You are receiving updates."
+#~ msgstr "Du erhältst Updates."
+
+#~ msgid ""
+#~ "Please make sure you have not reached site limits and/or expiration date."
+#~ msgstr ""
+#~ "Bitte stelle sicher, dass du nicht das Seiten-Limit und/oder Ablaufdatum "
+#~ "erreicht hast."
+
+#~ msgid ""
+#~ "Your license has expired, renew today to continue getting updates and "
+#~ "support!"
+#~ msgstr ""
+#~ "Deine Lizenz ist abgelaufen. Bitte erneuere sie, um weiterhin Updates und "
+#~ "Support zu erhalten!"
+
+#~ msgid "License Status"
+#~ msgstr "Lizenz-Status"
+
+#~ msgid "Install Plugin"
+#~ msgstr "Plugin installieren"
+
+#~ msgid "License"
+#~ msgstr "Lizenz"
+
+#~ msgid ""
+#~ "Please enter your license key. An active license key is necessary for "
+#~ "automatic theme updates and support."
+#~ msgstr ""
+#~ "Bitte trage deinen Lizenzschlüssel ein. Eine aktive Lizenz ist notwendig, "
+#~ "um automatische Updates und Support zu erhalten."
+
+#~ msgid "License Key"
+#~ msgstr "Lizenzschlüssel"
+
+#~ msgid "More Fonts"
+#~ msgstr "Weitere Schriftarten"
+
+#~ msgid ""
+#~ "You can install the GT Local Fonts plugin to extend the typography "
+#~ "options with additional local GDPR-compatible fonts."
+#~ msgstr ""
+#~ "Du kannst das GT Local Fonts Plugin installieren, um die Typografie-"
+#~ "Optionen mit zusätzlichen, lokalen und DSGVO-kompatiblen Schriftarten zu "
+#~ "erweitern."
