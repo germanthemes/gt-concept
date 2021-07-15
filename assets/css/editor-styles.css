@@ -457,7 +457,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
 	color: var(--gt-concept--button-hover-text-color);
-	background-color: var(--button-hover-color) !important;
+	background-color: #242424;
+	background-color: var(--gt-concept--button-hover-color);
 	text-decoration: none;
 }
 

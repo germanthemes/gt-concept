@@ -4,9 +4,9 @@ Theme URI: https://germanthemes.de/themes/gt-concept/
 Author: germanthemes
 Author URI: https://germanthemes.de
 Description: GT Concept is a modern Business WordPress Theme.
-Version: 1.5.2
+Version: 1.6
 Requires at least: 5.3
-Tested up to: 5.6
+Tested up to: 5.8
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -787,8 +787,9 @@ textarea {
 .site-header {
 	background-color: #fff;
 	background-color: var(--gt-concept--header-background-color);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid var(--header-border-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--gt-concept--header-border-color);
 }
 
 .header-main {
@@ -929,8 +930,9 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--header-border-color);
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--gt-concept--header-border-color);
 	text-decoration: none;
 }
 
@@ -1216,6 +1218,10 @@ textarea {
 .entry-content {
 	font-size: 18px;
 	font-size: 1.125rem;
+}
+
+.sticky {
+	display: block;
 }
 
 /* Featured Images */
@@ -1731,7 +1737,8 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
 	color: var(--gt-concept--button-hover-text-color);
-	background-color: var(--button-hover-color) !important;
+	background-color: #242424;
+	background-color: var(--gt-concept--button-hover-color);
 	text-decoration: none;
 }
 
@@ -2204,10 +2211,11 @@ object {
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		border: 1px solid var(--header-border-color);
+		border: 1px solid;
+		border-color: rgba(0, 0, 0, 0.1);
+		border-color: var(--gt-concept--header-border-color);
 		border-top: 4px solid #ff7755;
-		border-top: 4px solid var(--header-text-hover-color);
+		border-top: 4px solid var(--gt-concept--header-text-hover-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,

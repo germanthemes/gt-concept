@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/themes/gt-concept/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.6
+Tested up to: 5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,10 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.6 - 2021-07-15 =
+* added prefix for CSS variables
+* removed license key settings
 
 = 1.5.2 - 2021-01-08 =
 * added WPTT Webfont loader to embed default theme fonts

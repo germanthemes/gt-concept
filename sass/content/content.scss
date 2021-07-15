@@ -39,6 +39,10 @@
 	@include font-size(18);
 }
 
+.sticky {
+	display: block;
+}
+
 /* Featured Images */
 .wp-post-image {
 	margin: 0;

@@ -97,7 +97,7 @@
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	@include color(--button-hover-text-color);
-	background-color: var(--button-hover-color) !important;
+	@include background(--button-hover-color);
 	text-decoration: none;
 }
 
